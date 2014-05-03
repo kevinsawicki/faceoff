@@ -1,8 +1,15 @@
 # Faceoff
 
+## Overview
+
+* Who has won it previously
+* Who has scored the most goals
+* First time countries
+
 ## Countries
 
 * GDP graph
+* Population graph
 * Most wins graph
 * Most expensive players
 
