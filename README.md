@@ -22,6 +22,7 @@
 * Most expensive players
 * Oldest
 * Youngest
+* Most goals scored
 
 ## Players page
 
