@@ -5,7 +5,7 @@
 * June 12 - July 13
 * In Brazil
 * May 12 30-man provisional roster deadline
-* June 2: 23-man roster deadline
+* June 2 23-man roster deadline
 
 ## Overview
 
