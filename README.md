@@ -20,6 +20,8 @@
 * Population graph
 * Most wins graph
 * Most expensive players
+* Oldest
+* Youngest
 
 ## Players page
 
