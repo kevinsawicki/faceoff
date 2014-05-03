@@ -35,3 +35,7 @@
 * Salary of players
 * Ages of players
 * Number of world cup games played by each player
+* Record
+* Goals scored
+* Goals allowed
+* Best finish
