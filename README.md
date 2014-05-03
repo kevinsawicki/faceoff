@@ -7,6 +7,7 @@
 * May 12 30-man provisional roster deadline
 * June 2 23-man roster deadline
 * One giant page with navigation
+* Use [Play](https://www.google.com/fonts/specimen/Play) font for logo
 
 ## Overview
 
