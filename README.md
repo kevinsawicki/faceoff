@@ -1,5 +1,10 @@
 # Faceoff
 
+* 32 countries
+* 8 Groups A-H
+* June 12 - July 13
+* In Brazil
+
 ## Overview
 
 * Who has won it previously
