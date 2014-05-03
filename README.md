@@ -13,6 +13,8 @@
 * Who has scored the most goals
 * Number of countries from each continent
 * First time countries
+* How many world cups
+* Where and when was the first one
 
 ## Countries
 
