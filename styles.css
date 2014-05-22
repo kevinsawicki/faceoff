@@ -10,15 +10,135 @@ html, body {
   position: relative;
   background-position: top center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-attachment: fixed;
   height: 100%;
 }
 
-.us {
-  background-image: url(http://upload.wikimedia.org/wikipedia/commons/e/e2/Flag_of_the_United_States_%28Pantone%29.svg);
+.algeria {
+  background-image: url(./assets/crests/algeria.svg);
+}
+
+.argentina {
+  background-image: url(./assets/crests/argentina.svg);
+}
+
+.australia {
+  background-image: url(./assets/crests/australia.svg);
+}
+
+.belgium {
+  background-image: url(./assets/crests/belgium.svg);
+}
+
+.bosnia {
+  background-image: url(./assets/crests/bosnia.svg);
 }
 
 .brazil {
-  background-image: url(http://upload.wikimedia.org/wikipedia/en/0/05/Flag_of_Brazil.svg);
+  background-image: url(./assets/crests/brazil.svg);
+}
+
+.cameroon {
+  background-image: url(./assets/crests/cameroon.svg);
+}
+
+.chile {
+  background-image: url(./assets/crests/chile.svg);
+}
+
+.columbia {
+  background-image: url(./assets/crests/columbia.svg);
+}
+
+.costa-rica {
+  background-image: url(./assets/crests/costa-rica.svg);
+}
+
+.croatia {
+  background-image: url(./assets/crests/croatia.svg);
+}
+
+.ecuador {
+  background-image: url(./assets/crests/ecuador.svg);
+}
+
+.england {
+  background-image: url(./assets/crests/england.svg);
+}
+
+.france {
+  background-image: url(./assets/crests/france.svg);
+}
+
+.germany {
+  background-image: url(./assets/crests/germany.svg);
+}
+
+.ghana {
+  background-image: url(./assets/crests/ghana.svg);
+}
+
+.greece {
+  background-image: url(./assets/crests/greece.svg);
+}
+
+.honduras {
+  background-image: url(./assets/crests/honduras.svg);
+}
+
+.iran {
+  background-image: url(./assets/crests/iran.svg);
+}
+
+.italy {
+  background-image: url(./assets/crests/italy.svg);
+}
+
+.ivory-coast {
+  background-image: url(./assets/crests/ivory-coast.svg);
+}
+
+.japan {
+  background-image: url(./assets/crests/japan.svg);
+}
+
+.korea {
+  background-image: url(./assets/crests/korea.svg);
+}
+
+.mexico {
+  background-image: url(./assets/crests/mexico.svg);
+}
+
+.netherlands {
+  background-image: url(./assets/crests/netherlands.svg);
+}
+
+.nigeria {
+  background-image: url(./assets/crests/nigeria.svg);
+}
+
+.portugal {
+  background-image: url(./assets/crests/portugal.svg);
+}
+
+.russia {
+  background-image: url(./assets/crests/russia.svg);
+}
+
+.spain {
+  background-image: url(./assets/crests/spain.svg);
+}
+
+.switzerland {
+  background-image: url(./assets/crests/switzerland.svg);
+}
+
+.uruguay {
+  background-image: url(./assets/crests/uruguay.svg);
+}
+
+.usa {
+  background-image: url(./assets/crests/usa.svg);
 }
