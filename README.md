@@ -27,6 +27,8 @@
 * Oldest
 * Youngest
 * Most goals scored
+* First 3 opponents
+* 3 players to watch
 
 ## Players page
 
