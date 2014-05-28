@@ -20,28 +20,13 @@
 
 ## Countries
 
-* GDP graph
-* Population graph
-* Most wins graph
-* Most expensive players
-* Oldest
-* Youngest
-* Most goals scored
+* GDP
+* Population
+* World cup record
+* Best finish
+* How many world cups have they played in
+* Average age
 * First 3 opponents
 * 3 players to watch
-
-## Players page
-
-* Graph of where players play professionally
-* List of highest paid players
-
-## Country page
-
-* Where do players play professionally
-* Salary of players
-* Ages of players
-* Number of world cup games played by each player
-* Record
-* Goals scored
-* Goals allowed
-* Best finish
+  * Where do they play?
+  * How many goals did they score this year?
