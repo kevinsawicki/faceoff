@@ -6,17 +6,55 @@ html, body {
   height: 100%;
 }
 
-.country {
-  position: relative;
+.crest, .flag {
   background-position: top center;
   background-repeat: no-repeat;
   background-size: contain;
-  background-attachment: fixed;
-  height: 100%;
+  display: inline-block;
 }
 
-.intro {
-  height: 100%;
+.country-header {
+  display: inline-block;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.stat {
+  font-size: 2em;
+}
+
+.stat-description {
+  font-size: 1em;
+  margin-top: -.5em;
+}
+
+.nickname {
+  font-style: italic;
+}
+
+.tile {
+  border-width: 1px 1px 1px 1px;
+  border-style: solid;
+  border-color: #fff;
+}
+
+.usa-1 {
+  background: #d31145;
+  color: #fff;
+}
+
+.usa-2 {
+  background: #f4f4f4;
+  color: #333;
+}
+
+.usa-3 {
+  background: #00549f;
+  color: #fff;
+}
+
+.country-section {
+  background: #ccc;
 }
 
 .crest-algeria {
@@ -145,4 +183,12 @@ html, body {
 
 .crest-usa {
   background-image: url(./assets/crests/usa.svg);
+  height: 36px;
+  width: 36px;
+}
+
+.flag-usa {
+  background-image: url(./assets/flags/usa.svg);
+  height: 36px;
+  width: 70px;
 }
