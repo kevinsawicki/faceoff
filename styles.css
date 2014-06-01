@@ -53,6 +53,21 @@ html, body {
   color: #fff;
 }
 
+.germany-1 {
+  background: #000;
+  color: #fff;
+}
+
+.germany-2 {
+  background: #dd0000;
+  color: #fff;
+}
+
+.germany-3 {
+  background: #ffce00;
+  color: #000;
+}
+
 .country-section {
   background: #ccc;
 }
@@ -115,6 +130,8 @@ html, body {
 
 .crest-germany {
   background-image: url(./assets/crests/germany.svg);
+  height: 36px;
+  width: 36px;
 }
 
 .crest-ghana {
@@ -185,6 +202,12 @@ html, body {
   background-image: url(./assets/crests/usa.svg);
   height: 36px;
   width: 36px;
+}
+
+.flag-germany {
+  background-image: url(./assets/flags/germany.svg);
+  height: 36px;
+  width: 70px;
 }
 
 .flag-usa {
