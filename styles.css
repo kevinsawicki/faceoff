@@ -55,7 +55,7 @@ html, body {
 }
 
 .usa-1 {
-  background: #d31145;
+  background: rgba(211, 17, 69, .9);
   color: #fff;
 }
 
@@ -65,7 +65,7 @@ html, body {
 }
 
 .usa-3 {
-  background: #00549f;
+  background: rgba(0, 84, 159, .9);
   color: #fff;
 }
 
