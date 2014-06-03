@@ -1,6 +1,21 @@
-.navbar-inverse .navbar-brand, .navbar-nav {
+.navbar-brand, .navbar-nav {
   font-family: 'Play', sans-serif;
 }
+
+.navbar {
+  background: rgb(55,  175,  95);
+  border-color: rgb(29,  149,  69);
+}
+
+.navbar a {
+  color: #fff;
+}
+
+.navbar-nav > li > a:hover {
+  background: rgb(29,  149,  69);
+  color: #fff;
+}
+
 
 html, body {
   height: 100%;
