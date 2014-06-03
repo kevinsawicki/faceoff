@@ -21,7 +21,7 @@ html, body {
 }
 
 .country {
-  margin: 5px 0 5px 0;
+  margin: 20px 0 20px 0;
 }
 
 .stat {
@@ -60,7 +60,7 @@ html, body {
 }
 
 .usa-2 {
-  background: #f4f4f4;
+  background: #eee;
   color: #333;
 }
 
