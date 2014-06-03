@@ -38,6 +38,21 @@ html, body {
   border-color: #fff;
 }
 
+.wc-1 {
+  background: #4da526;
+  color: #fff;
+}
+
+.wc-2 {
+  background: #ffda00;
+  color: #111;
+}
+
+.wc-3 {
+  background: #1f4674;
+  color: #fff;
+}
+
 .usa-1 {
   background: #d31145;
   color: #fff;
