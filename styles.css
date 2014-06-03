@@ -19,6 +19,10 @@ html, body {
   padding-right: 25px;
 }
 
+.country {
+  margin: 5px 0 5px 0;
+}
+
 .stat {
   font-size: 2em;
 }
