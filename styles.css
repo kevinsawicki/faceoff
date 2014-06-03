@@ -4,6 +4,7 @@
 
 html, body {
   height: 100%;
+  font-family: 'Arimo', sans-serif;
 }
 
 .crest, .flag {
@@ -30,14 +31,10 @@ html, body {
 .stat-description {
   font-size: 1em;
   margin-top: -.5em;
-}
-
-.nickname {
-  font-style: italic;
-}
+  }
 
 .tile {
-  border-width: 1px 1px 1px 1px;
+  border-width: 1px;
   border-style: solid;
   border-color: #fff;
 }
