@@ -37,6 +37,8 @@ html, body {
   border-width: 1px;
   border-style: solid;
   border-color: #fff;
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 
 .wc-1 {
