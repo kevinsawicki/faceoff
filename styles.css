@@ -85,18 +85,18 @@ html, body {
 }
 
 .germany-1 {
-  background: #000;
+  background: rgba(0, 0, 0, .85);
   color: #fff;
 }
 
 .germany-2 {
-  background: #dd0000;
+  background: rgba(221, 0, 0, .75);
   color: #fff;
 }
 
 .germany-3 {
-  background: #ffce00;
-  color: #000;
+  background: rgba(255, 206, 0, .7);
+  color: #333;
 }
 
 .country-section {
