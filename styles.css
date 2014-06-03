@@ -55,17 +55,7 @@ html, body {
 }
 
 .wc-1 {
-  background: #4da526;
-  color: #fff;
-}
-
-.wc-2 {
-  background: #ffda00;
-  color: #111;
-}
-
-.wc-3 {
-  background: #1f4674;
+  background: rgba(31, 70, 116, .85);
   color: #fff;
 }
 
