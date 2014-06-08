@@ -105,7 +105,7 @@ svg.selectAll(".draws")
     .attr("y", function(d) { return y(d.losses + d.draws); })
     .attr("height", function(d) { return height - y(d.draws); });
 
-svg.selectAll(".bar2")
+svg.selectAll(".losses")
     .data(data)
   .enter().append("rect")
     .attr("class", function(d) { return "bar losses "+ d.class; })
