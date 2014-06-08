@@ -20,6 +20,7 @@
 html, body {
   height: 100%;
   font-family: 'Arimo', sans-serif;
+  background: #eee;
 }
 
 .crest, .flag {
@@ -251,4 +252,44 @@ html, body {
 
 .row {
   margin-bottom: 25px;
+}
+
+.legend, .tick text {
+  font-family: 'Arimo', sans-serif;
+  fill: #222;
+}
+
+.bar {
+  fill: #ccc;
+}
+
+.wins {
+  fill: #29AB87;
+}
+
+.draws {
+  fill: #FF7F50;
+}
+
+.losses {
+  fill: #86608E;
+}
+
+.axis {
+  font-size: 10px;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #333;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.x.axis .tick {
+  display: none;
 }
