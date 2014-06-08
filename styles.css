@@ -25,18 +25,15 @@ html, body {
 .crest, .flag {
   background-position: top center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 100% 100%;
   display: inline-block;
+  min-height: 100px;
 }
 
 .country-header {
   display: inline-block;
   padding-left: 25px;
   padding-right: 25px;
-}
-
-.country {
-  margin: 20px 0 20px 0;
 }
 
 .stat {
@@ -166,8 +163,6 @@ html, body {
 
 .crest-germany {
   background-image: url(./assets/crests/germany.svg);
-  height: 36px;
-  width: 36px;
 }
 
 .crest-ghana {
@@ -234,20 +229,26 @@ html, body {
   background-image: url(./assets/crests/uruguay.svg);
 }
 
-.crest-usa {
-  background-image: url(./assets/crests/usa.svg);
-  height: 36px;
-  width: 36px;
+.crest-united-states {
+  background-image: url(./assets/crests/united-states.svg);
 }
 
 .flag-germany {
   background-image: url(./assets/flags/germany.svg);
-  height: 36px;
-  width: 70px;
 }
 
-.flag-usa {
-  background-image: url(./assets/flags/usa.svg);
-  height: 36px;
-  width: 70px;
+.flag-ghana {
+  background-image: url(./assets/flags/ghana.svg);
+}
+
+.flag-portugal {
+  background-image: url(./assets/flags/portugal.svg);
+}
+
+.flag-united-states {
+  background-image: url(./assets/flags/united-states.svg);
+}
+
+.row {
+  margin-bottom: 25px;
 }
