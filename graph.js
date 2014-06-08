@@ -9,10 +9,11 @@ var xAxis = d3.svg.axis().scale(x).orient("bottom").tickFormat(function(country)
   var flag = country.toLowerCase().replace(/ /g, '-');
   svg.append("image")
     .attr("x", x(country))
-    .attr("y", height)
+    .attr("y", height + 5)
     .attr("width", x.rangeBand())
-    .attr("height", 30)
+    .attr("height", 18)
     .attr("xlink:href", "./assets/flags/"+ flag + ".svg")
+    .attr("preserveAspectRatio", "none")
     .append("title")
       .text(country);
   return '';
