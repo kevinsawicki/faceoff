@@ -53,7 +53,17 @@ html, body {
 }
 
 .wc-1 {
-  background: rgba(31, 70, 116, .85);
+  background: rgba(0, 155, 58, .85);
+  color: #fff;
+}
+
+.wc-2 {
+  background: rgba(254, 223, 0, .85);
+  color: #333;
+}
+
+.wc-3 {
+  background: rgba(0, 39, 118, .85);
   color: #fff;
 }
 
@@ -248,10 +258,6 @@ html, body {
 
 .flag-united-states {
   background-image: url(./assets/flags/united-states.svg);
-}
-
-.row {
-  margin-bottom: 25px;
 }
 
 .legend, .tick text {
