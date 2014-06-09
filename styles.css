@@ -303,6 +303,26 @@ html, body {
   fill: #A45A52;
 }
 
+.odds-2000 {
+  fill: #00703C;
+}
+
+.odds-1000 {
+  fill: #1A8A56;
+}
+
+.odds-100 {
+  fill: #33A36F;
+}
+
+.odds-25 {
+  fill: #4DBD89;
+}
+
+.odds-1 {
+  fill: #66D6A2;
+}
+
 .axis {
   font-size: 10px;
 }
