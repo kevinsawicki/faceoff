@@ -9,13 +9,18 @@
   </head>
   <body>
     <nav class="navbar navbar-static-top" role="navigation">
-      <div class="container-fluid">
+      <div class="container">
         <div class="navbar-header">
           <a class="navbar-brand" href="#">faceoff.io</a>
-          <ul class="nav navbar-nav">
-            <li><a href="https://github.com/kevinsawicki/faceoff/issues/new">Report Issue</a></li>
-          </ul>
         </div>
+        <ul class="nav navbar-nav">
+          <li><a href="#records">Records</a></li>
+          <li><a href="#finishes">Finishes</a></li>
+          <li><a href="#odds">Odds</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="https://github.com/kevinsawicki/faceoff/issues/new">Report Issue</a></li>
+        </ul>
       </div>
     </nav>
 
@@ -104,19 +109,25 @@
         </div>
       </div>
 
-      <h1>World Cup Records</h1>
-      <p>Below are the records for the 32 countries that qualified for the 2014 World Cup in Brazil.</p>
-      <p>The records include matches played in the previous 19 World Cup tournaments between 1930 and 2010.</p>
-      <svg class="records"></svg>
+      <div id="records">
+        <h1>World Cup Records</h1>
+        <p>Below are the records for the 32 countries that qualified for the 2014 World Cup in Brazil.</p>
+        <p>The records include matches played in the previous 19 World Cup tournaments between 1930 and 2010.</p>
+        <svg class="records"></svg>
+      </div>
 
-      <h1>World Cup Best Finishes</h1>
-      <p>Below is a graph of the best finish each country has had at the previous 19 World Cup tournaments between 1930 and 2010.</p>
-      <svg class="finishes"></svg>
+      <div id="finishes">
+        <h1>World Cup Best Finishes</h1>
+        <p>Below is a graph of the best finish each country has had at the previous 19 World Cup tournaments between 1930 and 2010.</p>
+        <svg class="finishes"></svg>
+      </div>
 
-      <h1>World Cup Odds</h1>
-      <p>Below is a graph of the odds of each of the 32 countries winning the 2014 World Cup.</p>
-      <p>The taller the bar the less likely that country is projected to win.</p>
-      <svg class="odds"></svg>
+      <div id="odds">
+        <h1>World Cup Odds</h1>
+        <p>Below is a graph of the odds of each of the 32 countries winning the 2014 World Cup.</p>
+        <p>The taller the bar the less likely that country is projected to win.</p>
+        <svg class="odds"></svg>
+      </div>
     </div>
     <script src="./graph.js"></script>
 </html>
