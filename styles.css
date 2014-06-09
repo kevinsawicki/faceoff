@@ -298,15 +298,15 @@ html, body {
 }
 
 .best-5, .best-6, .best-7, .best-8, .best-9, .best-10 {
-  fill: #D8BFD8;
-}
-
-.best-11, .best-12, .best-13, .best-14, .best-15, .best-16, .best-17, .best-18, .best-19, .best-20 {
   fill: #74C365;
 }
 
-.best-21, .best-22, .best-23, .best-24, .best-25, .best-26, .best-27, .best-28, .best-29, .best-30 {
+.best-11, .best-12, .best-13, .best-14, .best-15, .best-16, .best-17, .best-18, .best-19, .best-20 {
   fill: #A45A52;
+}
+
+.best-21, .best-22, .best-23, .best-24, .best-25, .best-26, .best-27, .best-28, .best-29, .best-30 {
+  fill: #D8BFD8;
 }
 
 .odds-2000 {
