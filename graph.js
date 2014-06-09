@@ -164,8 +164,11 @@ var graphFinishes = function() {
       .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
   var finishes = data.slice().sort(function(a, b) {
-    if (a.best === 1 && b.best === 1)
-      return a.champions - b.champions;
+    if (a.best === b.best)
+      if (a.best === 1 && b.best === 1 && a.champions !== b.champions)
+        return a.champions - b.champions;
+      else
+        return a.wins - b.wins;
     else
       return b.best - a.best;
   });
@@ -191,6 +194,41 @@ var graphFinishes = function() {
       .attr("width", x.rangeBand())
       .attr("y", function(d) { return y(33 - d.best); })
       .attr("height", function(d) { return height - y(33 - d.best); });
+
+  var legend = svg.selectAll(".legend")
+      .data(["1st", "2nd", "3rd", "4th", "5-10", "10-20", "20-30"])
+    .enter().append("g")
+      .attr("class", "legend")
+      .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
+
+  legend.append("rect")
+      .attr("x", 0)
+      .attr("width", 18)
+      .attr("height", 18)
+      .attr("class", function(d, i) {
+        switch (i) {
+        case 0:
+          return "best-1";
+        case 1:
+          return "best-2";
+        case 2:
+          return "best-3";
+        case 3:
+          return "best-4";
+        case 4:
+          return "best-10";
+        case 5:
+          return "best-20";
+        case 6:
+          return "best-30";
+        }
+      });
+
+  legend.append("text")
+      .attr("x", 20)
+      .attr("y", 9)
+      .attr("dy", ".35em")
+      .text(function(d) { return d; });
 }
 
 graphRecords()
