@@ -3,8 +3,8 @@
 }
 
 .navbar {
-  background: rgb(55,  175,  95);
-  border-color: rgb(29,  149,  69);
+  background: rgb(86,  97, 115);
+  border-color: rgb(61,  72,  90);
 }
 
 .navbar a {
@@ -12,7 +12,7 @@
 }
 
 .navbar-nav > li > a:hover {
-  background: rgb(29,  149,  69);
+  background: rgb(61,  72,  90);
   color: #fff;
 }
 
