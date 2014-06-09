@@ -3,38 +3,38 @@ var width = 960 - margin.left - margin.right;
 var height = 480 - margin.top - margin.bottom;
 
 var data = [
-  {"country": "Algeria", "wins": 2, "losses": 5, "draws": 2, "best": 13, "odds": 1500, "class": "algeria"},
-  {"country": "Argentina", "wins": 37, "losses": 20, "draws": 13, "best": 1, "odds": 4, "champions": 2, "class": "argentina"},
-  {"country": "Australia", "wins": 2, "losses": 5, "draws": 3, "best": 14, "odds": 2500, "class": "australia"},
-  {"country": "Belgium", "wins": 10, "losses": 17, "draws": 9, "best": 4, "odds": 20, "class": "belgium"},
-  {"country": "Bosnia", "wins": 0, "losses": 0, "draws": 0, "best": 32, "odds": 150, "class": "bosnia"},
-  {"country": "Brazil", "wins": 67, "losses": 15, "draws": 15, "best": 1, "odds": 11/4, "champions": 5, "class": "brazil"},
-  {"country": "Cameroon", "wins": 4, "losses": 9, "draws": 7, "best": 8, "odds": 750, "class": "cameroon"},
-  {"country": "Chile", "wins": 9, "losses": 14, "draws": 6, "best": 3, "odds": 50, "class": "chile"},
-  {"country": "Columbia", "wins": 3, "losses": 8, "draws": 2, "best": 14, "odds": 40, "class": "columbia"},
-  {"country": "Costa Rica", "wins": 3, "losses": 6, "draws": 1, "best": 13, "odds": 2500, "class": "costa-rica"},
-  {"country": "Croatia", "wins": 6, "losses": 5, "draws": 2, "best": 3, "odds": 175, "class": "croatia"},
-  {"country": "Ecuador", "wins": 3, "losses": 0, "draws": 4, "best": 12, "odds": 125, "class": "ecuador"},
-  {"country": "England", "wins": 26, "losses": 14, "draws": 19, "best": 1, "odds": 25, "champions": 1, "class": "england"},
-  {"country": "France", "wins": 25, "losses": 18, "draws": 11, "best": 1, "odds": 22, "champions": 1, "class": "france"},
-  {"country": "Germany", "wins": 60, "losses": 20, "draws": 19, "best": 1, "odds": 6, "champions": 3, "class": "germany"},
-  {"country": "Ghana", "wins": 4, "losses": 3, "draws": 2, "best": 7, "odds": 200, "class": "ghana"},
-  {"country": "Greece", "wins": 1, "losses": 5, "draws": 0, "best": 24, "odds": 200, "class": "greece"},
-  {"country": "Honduras", "wins": 0, "losses": 3, "draws": 3, "best": 18, "odds": 1500, "class": "honduras"},
-  {"country": "Iran", "wins": 1, "losses": 6, "draws": 2, "best": 14, "odds": 2500, "class": "iran"},
-  {"country": "Italy", "wins": 44, "losses": 15, "draws": 21, "best": 1, "odds": 25, "champions": 4, "class": "italy"},
-  {"country": "Ivory Coast", "wins": 2, "draws": 3, "losses": 1, "best": 17, "odds": 150, "class": "ivory-coast"},
-  {"country": "Japan", "wins": 4, "losses": 7, "draws": 3, "best": 9, "odds": 150, "class": "japan"},
-  {"country": "South Korea", "wins": 5, "losses": 15, "draws": 8, "best": 4, "odds": 250, "class": "south-korea"},
-  {"country": "Mexico", "wins": 12, "losses": 24, "draws": 13, "best": 6, "odds": 200, "class": "mexico"},
-  {"country": "Netherlands", "wins": 22, "losses": 11, "draws": 10, "best": 2, "odds": 28, "class": "netherlands"},
-  {"country": "Nigeria", "wins": 4, "losses": 8, "draws": 2, "best": 9, "odds": 300, "class": "nigeria"},
-  {"country": "Portugal", "wins": 12, "losses": 8, "draws": 3, "best": 3, "odds": 22, "class": "portgual"},
-  {"country": "Russia", "wins": 2, "losses": 4, "draws": 0, "best": 22, "odds": 80, "class": "russia"},
-  {"country": "Spain", "wins": 28, "losses": 16, "draws": 12, "best": 1, "odds": 6, "champions": 1, "class": "spain"},
-  {"country": "Switzerland", "wins": 9, "losses": 14, "draws": 6, "best": 6, "odds": 100, "class": "switzerland"},
-  {"country": "Uruguay", "wins": 18, "losses": 17, "draws": 12, "best": 1, "champions": 2, "odds": 28, "class": "uruguay"},
-  {"country": "United States", "wins": 7, "losses": 17, "draws": 5, "best": 3, "odds": 250, "class": "united-states"}
+  {"country": "Algeria", "wins": 2, "losses": 5, "draws": 2, "best": 24, "odds": 1500, "bestYear": 1982, "class": "algeria"},
+  {"country": "Argentina", "wins": 37, "losses": 20, "draws": 13, "best": 1, "odds": 4, "champions": 2, "bestYear": 1986, "class": "argentina"},
+  {"country": "Australia", "wins": 2, "losses": 5, "draws": 3, "best": 16, "odds": 2500, "bestYear": 2006, "class": "australia"},
+  {"country": "Belgium", "wins": 10, "losses": 17, "draws": 9, "best": 4, "odds": 20, "bestYear": 1986, "class": "belgium"},
+  {"country": "Bosnia", "wins": 0, "losses": 0, "draws": 0, "best": 33, "odds": 150, "class": "bosnia"},
+  {"country": "Brazil", "wins": 67, "losses": 15, "draws": 15, "best": 1, "odds": 11/4, "champions": 5, "bestYear": 2002, "class": "brazil"},
+  {"country": "Cameroon", "wins": 4, "losses": 9, "draws": 7, "best": 8, "odds": 750, "bestYear": 1990, "class": "cameroon"},
+  {"country": "Chile", "wins": 9, "losses": 14, "draws": 6, "best": 3, "odds": 50, "bestYear": 1962, "class": "chile"},
+  {"country": "Columbia", "wins": 3, "losses": 8, "draws": 2, "best": 16, "odds": 40, "bestYear": 1990, "class": "columbia"},
+  {"country": "Costa Rica", "wins": 3, "losses": 6, "draws": 1, "best": 16, "odds": 2500, "bestYear": 1990, "class": "costa-rica"},
+  {"country": "Croatia", "wins": 6, "losses": 5, "draws": 2, "best": 3, "odds": 175, "bestYear": 1998, "class": "croatia"},
+  {"country": "Ecuador", "wins": 3, "losses": 0, "draws": 4, "best": 16, "odds": 125, "bestYear": 2006, "class": "ecuador"},
+  {"country": "England", "wins": 26, "losses": 14, "draws": 19, "best": 1, "odds": 25, "champions": 1, "bestYear": 1966, "class": "england"},
+  {"country": "France", "wins": 25, "losses": 18, "draws": 11, "best": 1, "odds": 22, "champions": 1, "bestYear": 1998, "class": "france"},
+  {"country": "Germany", "wins": 60, "losses": 20, "draws": 19, "best": 1, "odds": 6, "champions": 3, "bestYear": 1990, "class": "germany"},
+  {"country": "Ghana", "wins": 4, "losses": 3, "draws": 2, "best": 8, "odds": 200, "bestYear": 2010, "class": "ghana"},
+  {"country": "Greece", "wins": 1, "losses": 5, "draws": 0, "best": 24, "odds": 200, "bestYear": 2010, "class": "greece"},
+  {"country": "Honduras", "wins": 0, "losses": 3, "draws": 3, "best": 24, "odds": 1500, "bestYear": 1982, "class": "honduras"},
+  {"country": "Iran", "wins": 1, "losses": 6, "draws": 2, "best": 24, "odds": 2500, "bestYear": 1998, "class": "iran"},
+  {"country": "Italy", "wins": 44, "losses": 15, "draws": 21, "best": 1, "odds": 25, "champions": 4, "bestYear": 2006, "class": "italy"},
+  {"country": "Ivory Coast", "wins": 2, "draws": 3, "losses": 1, "best": 24, "odds": 150, "bestYear": 2010, "class": "ivory-coast"},
+  {"country": "Japan", "wins": 4, "losses": 7, "draws": 3, "best": 16, "odds": 150, "bestYear": 2010, "class": "japan"},
+  {"country": "Mexico", "wins": 12, "losses": 24, "draws": 13, "best": 8, "odds": 200, "bestYear": 1986, "class": "mexico"},
+  {"country": "Netherlands", "wins": 22, "losses": 11, "draws": 10, "best": 2, "odds": 28, "bestYear": 2010, "class": "netherlands"},
+  {"country": "Nigeria", "wins": 4, "losses": 8, "draws": 2, "best": 16, "odds": 300, "bestYear": 1998, "class": "nigeria"},
+  {"country": "Portugal", "wins": 12, "losses": 8, "draws": 3, "best": 3, "odds": 22, "bestYear": 1966, "class": "portgual"},
+  {"country": "Russia", "wins": 2, "losses": 4, "draws": 0, "best": 24, "odds": 80, "bestYear": 2002, "class": "russia"},
+  {"country": "South Korea", "wins": 5, "losses": 15, "draws": 8, "best": 4, "odds": 250, "bestYear": 1998, "class": "south-korea"},
+  {"country": "Spain", "wins": 28, "losses": 16, "draws": 12, "best": 1, "odds": 6, "champions": 1, "bestYear": 2010, "class": "spain"},
+  {"country": "Switzerland", "wins": 9, "losses": 14, "draws": 6, "best": 8, "odds": 100, "bestYear": 1954, "class": "switzerland"},
+  {"country": "Uruguay", "wins": 18, "losses": 17, "draws": 12, "best": 1, "champions": 2, "odds": 28, "bestYear": 1950, "class": "uruguay"},
+  {"country": "United States", "wins": 7, "losses": 17, "draws": 5, "best": 3, "odds": 250, "bestYear": 1930, "class": "united-states"}
 ];
 
 var graphRecords = function() {
@@ -153,9 +153,7 @@ var graphFinishes = function() {
     return '';
   });
 
-  var yAxis = d3.svg.axis().scale(y).orient("right").ticks(32, "s").tickFormat(function(best) {
-    return 33 - best;
-  });
+  var yAxis = d3.svg.axis().scale(y).orient("right").ticks(0, "s");
 
   var svg = d3.select("svg.finishes")
       .attr("width", width + margin.left + margin.right)
@@ -181,11 +179,6 @@ var graphFinishes = function() {
       .attr("transform", "translate(0," + height + ")")
       .call(xAxis);
 
-  svg.append("g")
-      .attr("class", "y axis")
-      .attr("transform", "translate(" + width + ",0)")
-      .call(yAxis);
-
   svg.selectAll(".best")
       .data(finishes)
     .enter().append("rect")
@@ -195,18 +188,18 @@ var graphFinishes = function() {
       .attr("y", function(d) { return y(33 - d.best); })
       .attr("height", function(d) { return height - y(33 - d.best); });
 
-  var championships = finishes.filter(function(d) { return +d.champions > 0; });
-  svg.selectAll(".championships")
-      .data(championships)
+  var years = finishes.filter(function(d) { return +d.bestYear > 0; });
+  svg.selectAll(".years")
+      .data(years)
     .enter().append("text")
-      .attr("class", "championships")
+      .attr("class", "years")
       .attr("x", function(d) { return x(d.country) + 12; })
-      .attr("y", function(d) { return y(d.best) - 16; })
+      .attr("y", function(d) { return y(1) - 16; })
       .attr("dy", ".71em")
-      .text(function(d) { return d.champions; });
+      .text(function(d) { return d.bestYear; });
 
   var legend = svg.selectAll(".legend")
-      .data(["1st", "2nd", "3rd", "4th", "5th - 10th", "10th - 20th", "20th - 30th"])
+      .data(["1st", "2nd", "3rd", "4th", "Quarterfinals", "Round of 16", "Group Stage"])
     .enter().append("g")
       .attr("class", "legend")
       .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
