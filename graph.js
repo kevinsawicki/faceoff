@@ -25,7 +25,7 @@ var data = [
   {"country": "Italy", "wins": 44, "losses": 15, "draws": 21, "best": 1, "odds": 25, "champions": 4, "class": "italy"},
   {"country": "Ivory Coast", "wins": 2, "draws": 3, "losses": 1, "best": 17, "odds": 150, "class": "ivory-coast"},
   {"country": "Japan", "wins": 4, "losses": 7, "draws": 3, "best": 9, "odds": 150, "class": "japan"},
-  {"country": "Korea", "wins": 5, "losses": 15, "draws": 8, "best": 4, "odds": 250, "class": "korea"},
+  {"country": "South Korea", "wins": 5, "losses": 15, "draws": 8, "best": 4, "odds": 250, "class": "south-korea"},
   {"country": "Mexico", "wins": 12, "losses": 24, "draws": 13, "best": 6, "odds": 200, "class": "mexico"},
   {"country": "Netherlands", "wins": 22, "losses": 11, "draws": 10, "best": 2, "odds": 28, "class": "netherlands"},
   {"country": "Nigeria", "wins": 4, "losses": 8, "draws": 2, "best": 9, "odds": 300, "class": "nigeria"},
