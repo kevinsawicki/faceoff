@@ -4,29 +4,26 @@
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
     <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Play|Arimo'>
     <link rel="stylesheet" href="./styles.css">
-    <title>World Cup Primer</title>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <title>World Cup Records</title>
   </head>
   <body>
     <nav class="navbar navbar-static-top" role="navigation">
       <div class="container-fluid">
         <div class="navbar-header">
           <a class="navbar-brand" href="#">faceoff.io</a>
+          <ul class="nav navbar-nav">
+            <li><a href="https://github.com/kevinsawicki/faceoff/issues/new">Report Issue</a></li>
+          </ul>
         </div>
-        <ul class="nav navbar-nav">
-          <li><a href="#">About</a></li>
-          <li><a href="#">Report Issue</a></li>
-        </ul>
       </div>
     </nav>
 
     <div class="container">
       <div id="tournament">
+        <h1>World Cup Primer</h1>
         <div class="row">
-          <div class="col-lg-2 col-lg-offset-1   tile wc-1">
-            <div class="stat">World Cup</div>
-            <div class="stat-description">the tournament</div>
-          </div>
-          <div class="col-lg-2 tile wc-1">
+          <div class="col-lg-2 col-lg-offset-1 tile wc-1">
             <div class="stat">Brazil</div>
             <div class="stat-description">host nation</div>
           </div>
@@ -38,462 +35,87 @@
             <div class="stat">July 13<sup>th</sup></div>
             <div class="stat-description">last match</div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-2 tile wc-1">
-            <div class="stat">32</div>
-            <div class="stat-description">countries</div>
-          </div>
-          <div class="col-lg-2 tile wc-1">
-            <div class="stat">8</div>
-            <div class="stat-description">groups</div>
-          </div>
-          <div class="col-lg-2 tile wc-1">
-            <div class="stat">736</div>
-            <div class="stat-description">players</div>
-          </div>
-          <div class="col-lg-2 tile wc-1">
-            <div class="stat">64</div>
-            <div class="stat-description">games played</div>
-          </div>
           <div class="col-lg-2 tile wc-1">
             <div class="stat">12</div>
             <div class="stat-description">host cities</div>
           </div>
           <div class="col-lg-2 tile wc-1">
-            <div class="stat">$576 million</div>
-            <div class="stat-description">total prize money</div>
+            <div class="stat">20<sup>th</sup></div>
+            <div class="stat-description">world cup</div>
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-2 col-lg-offset-1 tile wc-1">
+          <div class="col-lg-2 col-lg-offset-2 tile wc-2">
+            <div class="stat">32</div>
+            <div class="stat-description">countries</div>
+          </div>
+          <div class="col-lg-2 tile wc-2">
+            <div class="stat">8</div>
+            <div class="stat-description">groups</div>
+          </div>
+          <div class="col-lg-2 tile wc-2">
+            <div class="stat">736</div>
+            <div class="stat-description">players</div>
+          </div>
+          <div class="col-lg-2 tile wc-2">
+            <div class="stat">64</div>
+            <div class="stat-description">games played</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-2 col-lg-offset-1 tile wc-3">
             <div class="stat">Spain</div>
             <div class="stat-description">winner 2010</div>
           </div>
-          <div class="col-lg-2 tile wc-1">
+          <div class="col-lg-2 tile wc-3">
             <div class="stat">Netherlands</div>
             <div class="stat-description">runner up 2010</div>
           </div>
-          <div class="col-lg-2 tile wc-1">
+          <div class="col-lg-2 tile wc-3">
             <div class="stat">Germany</div>
             <div class="stat-description">3<sup>rd</sup> place 2010</div>
           </div>
-          <div class="col-lg-2 tile wc-1">
+          <div class="col-lg-2 tile wc-3">
             <div class="stat">Uruguay</div>
             <div class="stat-description">4<sup>th</sup> place 2010</div>
           </div>
-          <div class="col-lg-2 tile wc-1">
+          <div class="col-lg-2 tile wc-3">
             <div class="stat">North Korea</div>
-            <div class="stat-description">last place</div>
+            <div class="stat-description">last place 2010</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-2 col-lg-offset-2 tile wc-2">
+            <div class="stat">$576 million</div>
+            <div class="stat-description">total prize money</div>
+          </div>
+          <div class="col-lg-2 tile wc-2">
+            <div class="stat">$35 million</div>
+            <div class="stat-description">1<sup>st</sup> place prize money</div>
+          </div>
+          <div class="col-lg-2 tile wc-2">
+            <div class="stat">$25 million</div>
+            <div class="stat-description">2<sup>nd</sup> place prize money</div>
+          </div>
+          <div class="col-lg-2 tile wc-2">
+            <div class="stat">$22 million</div>
+            <div class="stat-description">3<sup>rd</sup> place prize money</div>
           </div>
         </div>
       </div>
 
-      <div id="spain" class="country">
-        <div class="row">
-          <div class="col-lg-2 col-lg-offset-1 tile spain-1">
-            <div class="stat country-name">Spain</div>
-            <div class="stat-description">country</div>
-          </div>
-          <div class="col-lg-2 tile spain-1">
-            <div class="stat nickname">Red Fury</div>
-            <div class="stat-description">nickname</div>
-          </div>
-          <div class="col-lg-2 tile spain-1">
-            <div class="stat odds">11 to 2</div>
-            <div class="stat-description">odds of winning</div>
-          </div>
-          <div class="col-lg-2 tile spain-1">
-            <div class="stat ranking">#1</div>
-            <div class="stat-description">world ranking</div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-2 tile spain-1">
-            <div class="stat population">46.7 million</div>
-            <div class="stat-description">population</div>
-          </div>
-          <div class="col-lg-2 tile spain-1">
-            <div class="stat area">195,364</div>
-            <div class="stat-description">area in square miles</div>
-          </div>
-          <div class="col-lg-2 tile spain-1">
-            <div class="stat gdp">$1.4 trillion</div>
-            <div class="stat-description">gross domestic product</div>
-          </div>
-          <div class="col-lg-2 tile spain-1">
-            <div class="stat debt">$1.3 trillion</div>
-            <div class="stat-description">national debt</div>
-          </div>
-          <div class="col-lg-2 tile spain-1">
-            <div class="stat draws">$17,834</div>
-            <div class="stat-description">medium income</div>
-          </div>
-          <div class="col-lg-2 tile spain-1">
-            <div class="stat age">41.5 years</div>
-            <div class="stat-description">medium age</div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-2 col-lg-offset-1 tile spain-2">
-            <div class="stat best-finish">1<sup>st</sup> in 2010</div>
-            <div class="stat-description">best finish</div>
-          </div>
-          <div class="col-lg-2 tile spain-2">
-            <div class="stat appearances">17<sup>th</sup> in 1998</div>
-            <div class="stat-description">worst finish</div>
-          </div>
-          <div class="col-lg-2 tile spain-2">
-            <div class="stat ranking">14 out of 20</div>
-            <div class="stat-description">world cups qualified for</div>
-          </div>
-          <div class="col-lg-2 tile spain-2">
-            <div class="stat last-finish">1<sup>st</sup> place</div>
-            <div class="stat-description">2010 finish</div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-2 tile spain-2">
-            <div class="stat game-played">56</div>
-            <div class="stat-description">games played</div>
-          </div>
-          <div class="col-lg-2 tile spain-2">
-            <div class="stat wins">28</div>
-            <div class="stat-description">wins</div>
-          </div>
-          <div class="col-lg-2 tile spain-2">
-            <div class="stat loses">16</div>
-            <div class="stat-description">losses</div>
-          </div>
-          <div class="col-lg-2 tile spain-2">
-            <div class="stat draws">12</div>
-            <div class="stat-description">draws</div>
-          </div>
-          <div class="col-lg-2 tile spain-2">
-            <div class="stat goals-scored">88</div>
-            <div class="stat-description">goals scored</div>
-          </div>
-          <div class="col-lg-2 tile spain-2">
-            <div class="stat goals-allowed">59</div>
-            <div class="stat-description">goals allowed</div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-2 col-lg-offset-1 tile spain-3">
-            <div class="stat">B</div>
-            <div class="stat-description">group</div>
-          </div>
-          <div class="col-lg-2 tile spain-3">
-            <div class="stat">2 losses</div>
-            <div class="stat-description">record against Netherlands</div>
-          </div>
-          <div class="col-lg-2 tile spain-3">
-            <div class="stat">1 win</div>
-            <div class="stat-description">record against Chile</div>
-          </div>
-          <div class="col-lg-2 tile spain-3">
-            <div class="stat">2 losses</div>
-            <div class="stat-description">record against Australia</div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-2 tile spain-3">
-            <div class="stat">10</div>
-            <div class="stats-description">MLS players</div>
-          </div>
-          <div class="col-lg-2 tile spain-3">
-            <div class="stat">4</div>
-            <div class="stats-description">EPL players</div>
-          </div>
-          <div class="col-lg-2 tile spain-3">
-            <div class="stat">4</div>
-            <div class="stats-description">Bundesliga players</div>
-          </div>
-          <div class="col-lg-2 tile spain-3">
-            <div class="stat">23.6 years</div>
-            <div class="stats-description">player age</div>
-          </div>
-          <div class="col-lg-2 tile spain-3">
-            <div class="stat">5' 11''</div>
-            <div class="stats-description">player height</div>
-          </div>
-          <div class="col-lg-2 tile spain-3">
-            <div class="stat">182 pounds</div>
-            <div class="stats-description">player weight</div>
-          </div>
-        </div>
-      </div>
+      <h1>World Cup Records</h1>
+      <p>Below are the records for the 32 countries that qualified for the 2014 World Cup in Brazil.</p>
+      <p>The records include matches played in the previous 19 World Cup tournaments between 1930 and 2010.</p>
+      <svg class="records"></svg>
 
-      <div id="germany" class="country">
-        <div class="row">
-          <div class="col-lg-3 tile germany-1">
-            <div class="stat">Germany</div>
-            <div class="stat-description">country</div>
-          </div>
-          <div class="col-lg-3 tile germany-1">
-            <div class="stat nickname">The Team</div>
-            <div class="stat-description">nickname</div>
-          </div>
-          <div class="col-lg-3 tile germany-1">
-            <div class="stat odds">5 to 1</div>
-            <div class="stat-description">odds of winning</div>
-          </div>
-          <div class="col-lg-3 tile germany-1">
-            <div class="stat ranking">#2</div>
-            <div class="stat-description">world ranking</div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-2 tile germany-1">
-            <div class="stat population">80 million</div>
-            <div class="stat-description">population</div>
-          </div>
-          <div class="col-lg-2 tile germany-1">
-            <div class="stat area">138,000</div>
-            <div class="stat-description">area in square miles</div>
-          </div>
-          <div class="col-lg-2 tile germany-1">
-            <div class="stat gdp">$3.3 trillion</div>
-            <div class="stat-description">gross domestic product</div>
-          </div>
-          <div class="col-lg-2 tile germany-1">
-            <div class="stat debt">$3 trillion</div>
-            <div class="stat-description">national debt</div>
-          </div>
-          <div class="col-lg-2 tile germany-1">
-            <div class="stat draws">$24,426</div>
-            <div class="stat-description">medium income</div>
-          </div>
-          <div class="col-lg-2 tile germany-1">
-            <div class="stat age">43.7 years</div>
-            <div class="stat-description">medium age</div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-3 tile germany-2">
-            <div class="stat best-finish">1954, 1974, 1990</div>
-            <div class="stat-description">world cup champions</div>
-          </div>
-          <div class="col-lg-3 tile germany-2">
-            <div class="stat appearances">10<sup>th</sup> place in 1938</div>
-            <div class="stat-description">worst finish</div>
-          </div>
-          <div class="col-lg-3 tile germany-2">
-            <div class="stat ranking">18 out of 20</div>
-            <div class="stat-description">world cups qualified for</div>
-          </div>
-          <div class="col-lg-3 tile germany-2">
-            <div class="stat last-finish">3<sup>rd</sup> place</div>
-            <div class="stat-description">2010 finish</div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-2 tile germany-2">
-            <div class="stat game-played">99</div>
-            <div class="stat-description">games played</div>
-          </div>
-          <div class="col-lg-2 tile germany-2">
-            <div class="stat wins">60</div>
-            <div class="stat-description">wins</div>
-          </div>
-          <div class="col-lg-2 tile germany-2">
-            <div class="stat loses">20</div>
-            <div class="stat-description">losses</div>
-          </div>
-          <div class="col-lg-2 tile germany-2">
-            <div class="stat draws">19</div>
-            <div class="stat-description">draws</div>
-          </div>
-          <div class="col-lg-2 tile germany-2">
-            <div class="stat goals-scored">206</div>
-            <div class="stat-description">goals scored</div>
-          </div>
-          <div class="col-lg-2 tile germany-2">
-            <div class="stat goals-allowed">117</div>
-            <div class="stat-description">goals allowed</div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-3 tile germany-3">
-            <div class="stat">G</div>
-            <div class="stat-description">group</div>
-          </div>
-          <div class="col-lg-3 tile germany-3">
-            <div class="stat">2 wins</div>
-            <div class="stat-description">record against USA</div>
-          </div>
-          <div class="col-lg-3 tile germany-3">
-            <div class="stat">1 win</div>
-            <div class="stat-description">record against Portugal</div>
-          </div>
-          <div class="col-lg-3 tile germany-3">
-            <div class="stat">2 losses</div>
-            <div class="stat-description">record against Ghana</div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-2 tile germany-3">
-            <div class="stat">19</div>
-            <div class="stats-description">Bundesliga players</div>
-          </div>
-          <div class="col-lg-2 tile germany-3">
-            <div class="stat">3</div>
-            <div class="stats-description">EPL players</div>
-          </div>
-          <div class="col-lg-2 tile germany-3">
-            <div class="stat">1</div>
-            <div class="stats-description">La Liga players</div>
-          </div>
-          <div class="col-lg-2 tile germany-3">
-            <div class="stat">23.6 years</div>
-            <div class="stats-description">average player age</div>
-          </div>
-          <div class="col-lg-2 tile germany-3">
-            <div class="stat">5' 11''</div>
-            <div class="stats-description">player height</div>
-          </div>
-          <div class="col-lg-2 tile germany-3">
-            <div class="stat">182 pounds</div>
-            <div class="stats-description">player weight</div>
-          </div>
-        </div>
-      </div>
+      <h1>World Cup Best Finishes</h1>
+      <p>Below is a graph of the best finish each country has had at the previous 19 World Cup tournaments between 1930 and 2010.</p>
+      <svg class="finishes"></svg>
 
-      <div id="usa" class="country">
-        <div class="row">
-          <div class="col-lg-3 tile usa-1">
-            <div class="stat country-name">United States</div>
-            <div class="stat-description">country</div>
-          </div>
-          <div class="col-lg-3 tile usa-1">
-            <div class="stat nickname">Stars &amp; Stripes</div>
-            <div class="stat-description">nickname</div>
-          </div>
-          <div class="col-lg-3 tile usa-1">
-            <div class="stat odds">250 to 1</div>
-            <div class="stat-description">odds of winning</div>
-          </div>
-          <div class="col-lg-3 tile usa-1">
-            <div class="stat ranking">#14</div>
-            <div class="stat-description">world ranking</div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-2 tile usa-1">
-            <div class="stat population">318 million</div>
-            <div class="stat-description">population</div>
-          </div>
-          <div class="col-lg-2 tile usa-1">
-            <div class="stat area">3.8 million</div>
-            <div class="stat-description">area in square miles</div>
-          </div>
-          <div class="col-lg-2 tile usa-1">
-            <div class="stat gdp">$16.8 trillion</div>
-            <div class="stat-description">gross domestic product</div>
-          </div>
-          <div class="col-lg-2 tile usa-1">
-            <div class="stat debt">$17.5 trillion</div>
-            <div class="stat-description">national debt</div>
-          </div>
-          <div class="col-lg-2 tile usa-1">
-            <div class="stat draws">$29,056</div>
-            <div class="stat-description">medium income</div>
-          </div>
-          <div class="col-lg-2 tile usa-1">
-            <div class="stat age">36.9 years</div>
-            <div class="stat-description">medium age</div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-3 tile usa-2">
-            <div class="stat best-finish">3<sup>rd</sup> place in 1930</div>
-            <div class="stat-description">best finish</div>
-          </div>
-          <div class="col-lg-3 tile usa-2">
-            <div class="stat appearances">32<sup>nd</sup> place in 1998</div>
-            <div class="stat-description">worst finish</div>
-          </div>
-          <div class="col-lg-3 tile usa-2">
-            <div class="stat ranking">10 out of 20</div>
-            <div class="stat-description">world cups qualified for</div>
-          </div>
-          <div class="col-lg-3 tile usa-2">
-            <div class="stat last-finish">12<sup>th</sup> place</div>
-            <div class="stat-description">2010 finish</div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-2 tile usa-2">
-            <div class="stat game-played">29</div>
-            <div class="stat-description">games played</div>
-          </div>
-          <div class="col-lg-2 tile usa-2">
-            <div class="stat wins">7</div>
-            <div class="stat-description">wins</div>
-          </div>
-          <div class="col-lg-2 tile usa-2">
-            <div class="stat loses">17</div>
-            <div class="stat-description">losses</div>
-          </div>
-          <div class="col-lg-2 tile usa-2">
-            <div class="stat draws">5</div>
-            <div class="stat-description">draws</div>
-          </div>
-          <div class="col-lg-2 tile usa-2">
-            <div class="stat goals-scored">32</div>
-            <div class="stat-description">goals scored</div>
-          </div>
-          <div class="col-lg-2 tile usa-2">
-            <div class="stat goals-allowed">56</div>
-            <div class="stat-description">goals allowed</div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-3 tile usa-3">
-            <div class="stat">G</div>
-            <div class="stat-description">group</div>
-          </div>
-          <div class="col-lg-3 tile usa-3">
-            <div class="stat">2 losses</div>
-            <div class="stat-description">record against Germany</div>
-          </div>
-          <div class="col-lg-3 tile usa-3">
-            <div class="stat">1 win</div>
-            <div class="stat-description">record against Portugal</div>
-          </div>
-          <div class="col-lg-3 tile usa-3">
-            <div class="stat">2 losses</div>
-            <div class="stat-description">record against Ghana</div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-2 tile usa-3">
-            <div class="stat">10</div>
-            <div class="stats-description">MLS players</div>
-          </div>
-          <div class="col-lg-2 tile usa-3">
-            <div class="stat">4</div>
-            <div class="stats-description">EPL players</div>
-          </div>
-          <div class="col-lg-2 tile usa-3">
-            <div class="stat">4</div>
-            <div class="stats-description">Bundesliga players</div>
-          </div>
-          <div class="col-lg-2 tile usa-3">
-            <div class="stat">23.6 years</div>
-            <div class="stats-description">player age</div>
-          </div>
-          <div class="col-lg-2 tile usa-3">
-            <div class="stat">5' 11''</div>
-            <div class="stats-description">player height</div>
-          </div>
-          <div class="col-lg-2 tile usa-3">
-            <div class="stat">182 pounds</div>
-            <div class="stats-description">player weight</div>
-          </div>
-        </div>
-      </div>
-
+      <h1>World Cup Odds</h1>
+      <p>Below is a graph of the odds of each of the 32 countries winning the 2014 World Cup.</p>
+      <svg class="odds"></svg>
     </div>
-  </body>
+    <script src="./graph.js"></script>
 </html>
