@@ -195,6 +195,16 @@ var graphFinishes = function() {
       .attr("y", function(d) { return y(33 - d.best); })
       .attr("height", function(d) { return height - y(33 - d.best); });
 
+  var championships = finishes.filter(function(d) { return +d.champions > 0; });
+  svg.selectAll(".championships")
+      .data(championships)
+    .enter().append("text")
+      .attr("class", "championships")
+      .attr("x", function(d) { return x(d.country) + 12; })
+      .attr("y", function(d) { return y(d.best) - 16; })
+      .attr("dy", ".71em")
+      .text(function(d) { return d.champions; });
+
   var legend = svg.selectAll(".legend")
       .data(["1st", "2nd", "3rd", "4th", "5th - 10th", "10th - 20th", "20th - 30th"])
     .enter().append("g")

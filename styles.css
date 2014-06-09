@@ -38,11 +38,11 @@ html, body {
 }
 
 .stat {
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 .stat-description {
-  font-size: 1em;
+  font-size: .9em;
   margin-top: -.5em;
 }
 
@@ -346,4 +346,10 @@ html, body {
 
 .x.axis .tick {
   display: none;
+}
+
+.championships {
+  text-anchor: middle;
+  fill: #fff;
+  font-size: 12px;
 }
