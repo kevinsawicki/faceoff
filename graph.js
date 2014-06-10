@@ -24,7 +24,7 @@ var data = [
     "best": 1,
     "odds": 4,
     "champions": 2,
-    "bestYear": 1986,
+    "bestYear": [1986, 1978],
     "population": 41090000,
     "gdp": 475500000000,
     "income": 5170,
@@ -76,7 +76,7 @@ var data = [
     "best": 1,
     "odds": 11/4,
     "champions": 5,
-    "bestYear": 2002,
+    "bestYear": [2002, 1994, 1970, 1962, 1958],
     "population": 198700000,
     "gdp": 2253000000000,
     "income": 11630,
@@ -196,7 +196,7 @@ var data = [
     "best": 1,
     "odds": 6,
     "champions": 3,
-    "bestYear": 1990,
+    "bestYear": [1990, 1974, 1954],
     "population": 80430000,
     "gdp": 3426000000000,
     "income": 45170,
@@ -262,7 +262,7 @@ var data = [
     "best": 1,
     "odds": 25,
     "champions": 4,
-    "bestYear": 2006,
+    "bestYear": [2006, 1982,  1938, 1934],
     "population": 59540000,
     "gdp": 2013000000000,
     "income": 34720,
@@ -407,7 +407,7 @@ var data = [
     "best": 1,
     "champions": 2,
     "odds": 28,
-    "bestYear": 1950,
+    "bestYear": [1950, 1930],
     "population": 3395000,
     "gdp": 49920000000,
     "income": 13580,
@@ -580,15 +580,16 @@ var graphFinishes = function() {
       .attr("y", function(d) { return y(33 - d.best); })
       .attr("height", function(d) { return Math.max(0, height - y(33 - d.best)); });
 
-  var years = finishes.filter(function(d) { return +d.bestYear > 0; });
-  svg.selectAll(".years")
-      .data(years)
-    .enter().append("text")
-      .attr("class", "years")
-      .attr("x", function(d) { return x(d.country) + 12; })
-      .attr("y", function(d) { return y(1) - 16; })
-      .attr("dy", ".71em")
-      .text(function(d) { return d.bestYear; });
+  var years = finishes.filter(function(d) { return !!d.bestYear && (d.bestYear.length > 0 || +d.bestYear > 0); });
+  for (var i = 0; i < years.length; i++)
+    svg.selectAll(".years-" + years[i].country)
+        .data(years[i].bestYear.length > 0 ? years[i].bestYear : [years[i].bestYear])
+      .enter().append("text")
+        .attr("class", "years")
+        .attr("x", function(d) { return x(years[i].country) + 12; })
+        .attr("y", function(d, k) { return y(1) - (16 * (k + 1)); })
+        .attr("dy", ".71em")
+        .text(function(bestYear) { return bestYear; });
 
   var legend = svg.selectAll(".legend")
       .data(["1st", "2nd", "3rd", "4th", "Quarterfinals", "Round of 16", "Group Stage"])
