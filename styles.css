@@ -1,10 +1,25 @@
-.navbar-brand, .navbar-nav {
+.navbar-brand, .navbar-nav, .signature {
   font-family: 'Play', sans-serif;
 }
 
-.navbar {
+.navbar, .footer {
   background: rgb(86,  97, 115);
   border-color: rgb(61,  72,  90);
+}
+
+.footer {
+  border-top: 1px solid;
+  color: #fff;
+  padding: 10px;
+  margin-top: 50px;
+}
+
+.footer a {
+  color: #fff;
+}
+
+.footer a:hover {
+  text-decoration: underline;
 }
 
 .navbar a {
@@ -16,6 +31,9 @@
   color: #fff;
 }
 
+.graph {
+  margin-top: 50px;
+}
 
 html, body {
   height: 100%;
