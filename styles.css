@@ -336,24 +336,20 @@ html, body {
   fill: #BE3333;
 }
 
-.odds-2000 {
-  fill: #00703C;
+.odds-20 {
+  fill: #177245;
 }
 
-.odds-1000 {
-  fill: #1A8A56;
-}
-
-.odds-100 {
-  fill: #33A36F;
-}
-
-.odds-25 {
-  fill: #4DBD89;
+.odds-10 {
+  fill: #318C5F;
 }
 
 .odds-1 {
-  fill: #66D6A2;
+  fill: #4AA578;
+}
+
+.odds-not-1 {
+  fill: #64BF92;
 }
 
 .axis {

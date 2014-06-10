@@ -9,7 +9,7 @@ var data = [
     "losses": 5,
     "draws": 2,
     "best": 24,
-    "odds": 1500,
+    "odds": 0.07,
     "bestYear": 1982,
     "population": 38480000,
     "gdp": 205800000000,
@@ -22,7 +22,7 @@ var data = [
     "losses": 20,
     "draws": 13,
     "best": 1,
-    "odds": 4,
+    "odds": 20,
     "champions": 2,
     "bestYear": [1986, 1978],
     "population": 41090000,
@@ -36,7 +36,7 @@ var data = [
     "losses": 5,
     "draws": 3,
     "best": 16,
-    "odds": 2500,
+    "odds": 0.04,
     "bestYear": 2006,
     "population": 22720000,
     "gdp": 1532000000000,
@@ -49,7 +49,7 @@ var data = [
     "losses": 17,
     "draws": 9,
     "best": 4,
-    "odds": 20,
+    "odds": 4.76,
     "bestYear": 1986,
     "population": 11130000,
     "gdp": 483000000000,
@@ -62,7 +62,7 @@ var data = [
     "losses": 0,
     "draws": 0,
     "best": 33,
-    "odds": 150,
+    "odds": 0.66,
     "population": 3834000,
     "gdp": 17470000000,
     "income": 4750,
@@ -74,7 +74,7 @@ var data = [
     "losses": 15,
     "draws": 15,
     "best": 1,
-    "odds": 11/4,
+    "odds": 26.67,
     "champions": 5,
     "bestYear": [2002, 1994, 1970, 1962, 1958],
     "population": 198700000,
@@ -88,7 +88,7 @@ var data = [
     "losses": 9,
     "draws": 7,
     "best": 8,
-    "odds": 750,
+    "odds": 0.13,
     "bestYear": 1990,
     "population": 21700000,
     "gdp": 25320000000,
@@ -101,7 +101,7 @@ var data = [
     "losses": 14,
     "draws": 6,
     "best": 3,
-    "odds": 50,
+    "odds": 0.13,
     "bestYear": 1962,
     "population": 17460000,
     "gdp": 269900000000,
@@ -114,7 +114,7 @@ var data = [
     "losses": 8,
     "draws": 2,
     "best": 16,
-    "odds": 40,
+    "odds": 2.44,
     "bestYear": 1990,
     "population": 47700000,
     "gdp": 369600000000,
@@ -127,7 +127,7 @@ var data = [
     "losses": 6,
     "draws": 1,
     "best": 16,
-    "odds": 2500,
+    "odds": 0.04,
     "bestYear": 1990,
     "population": 4805000,
     "gdp": 45100000000,
@@ -140,7 +140,7 @@ var data = [
     "losses": 5,
     "draws": 2,
     "best": 3,
-    "odds": 175,
+    "odds": 0.57,
     "bestYear": 1998,
     "population": 4268000,
     "gdp": 59320000000,
@@ -153,7 +153,7 @@ var data = [
     "losses": 0,
     "draws": 4,
     "best": 16,
-    "odds": 125,
+    "odds": 0.79,
     "bestYear": 2006,
     "population": 15490000,
     "gdp": 84040000000,
@@ -166,7 +166,7 @@ var data = [
     "losses": 14,
     "draws": 19,
     "best": 1,
-    "odds": 25,
+    "odds": 3.85,
     "champions": 1,
     "bestYear": 1966,
     "population": 63610000,
@@ -180,7 +180,7 @@ var data = [
     "losses": 18,
     "draws": 11,
     "best": 1,
-    "odds": 22,
+    "odds": 4.35,
     "champions": 1,
     "bestYear": 1998,
     "population": 65700000,
@@ -194,7 +194,7 @@ var data = [
     "losses": 20,
     "draws": 19,
     "best": 1,
-    "odds": 6,
+    "odds": 14.29,
     "champions": 3,
     "bestYear": [1990, 1974, 1954],
     "population": 80430000,
@@ -208,7 +208,7 @@ var data = [
     "losses": 3,
     "draws": 2,
     "best": 8,
-    "odds": 200,
+    "odds": 0.5,
     "bestYear": 2010,
     "population": 25370000,
     "gdp": 40710000000,
@@ -221,7 +221,7 @@ var data = [
     "losses": 5,
     "draws": 0,
     "best": 24,
-    "odds": 200,
+    "odds": 0.5,
     "bestYear": 2010,
     "population": 11090000,
     "gdp": 248900000000,
@@ -234,7 +234,7 @@ var data = [
     "losses": 3,
     "draws": 3,
     "best": 24,
-    "odds": 1500,
+    "odds": 0.07,
     "bestYear": 1982,
     "population": 7936000,
     "gdp": 18430000000,
@@ -247,7 +247,7 @@ var data = [
     "losses": 6,
     "draws": 2,
     "best": 24,
-    "odds": 2500,
+    "odds": 0.04,
     "bestYear": 1998,
     "population": 76420000,
     "gdp": 552400000000,
@@ -260,7 +260,7 @@ var data = [
     "losses": 15,
     "draws": 21,
     "best": 1,
-    "odds": 25,
+    "odds": 3.85,
     "champions": 4,
     "bestYear": [2006, 1982,  1938, 1934],
     "population": 59540000,
@@ -274,7 +274,7 @@ var data = [
     "draws": 3,
     "losses": 1,
     "best": 24,
-    "odds": 150,
+    "odds": 0.66,
     "bestYear": 2010,
     "population": 19840000,
     "gdp": 24680000,
@@ -287,7 +287,7 @@ var data = [
     "losses": 7,
     "draws": 3,
     "best": 16,
-    "odds": 150,
+    "odds": 0.66,
     "bestYear": 2010,
     "population": 127600000,
     "gdp": 5961000000000,
@@ -300,7 +300,7 @@ var data = [
     "losses": 24,
     "draws": 13,
     "best": 8,
-    "odds": 200,
+    "odds": 0.5,
     "bestYear": 1986,
     "population": 120800000,
     "gdp": 1178000000000,
@@ -313,7 +313,7 @@ var data = [
     "losses": 11,
     "draws": 10,
     "best": 2,
-    "odds": 28,
+    "odds": 3.45,
     "bestYear": [2010, 1978, 1974],
     "population": 16750000,
     "gdp": 770100000000,
@@ -326,7 +326,7 @@ var data = [
     "losses": 8,
     "draws": 2,
     "best": 16,
-    "odds": 300,
+    "odds": 0.33,
     "bestYear": 1998,
     "population": 168800000,
     "gdp": 459600000000,
@@ -339,7 +339,7 @@ var data = [
     "losses": 8,
     "draws": 3,
     "best": 3,
-    "odds": 22,
+    "odds": 4.35,
     "bestYear": 1966,
     "population": 10510000,
     "gdp": 212100000000,
@@ -352,7 +352,7 @@ var data = [
     "losses": 4,
     "draws": 0,
     "best": 24,
-    "odds": 80,
+    "odds": 1.23,
     "bestYear": 2002,
     "population": 143500000,
     "gdp": 2015000000000,
@@ -365,7 +365,7 @@ var data = [
     "losses": 15,
     "draws": 8,
     "best": 4,
-    "odds": 250,
+    "odds": 0.4,
     "bestYear": 1998,
     "population": 50000000,
     "gdp": 1130000000000,
@@ -378,7 +378,7 @@ var data = [
     "losses": 16,
     "draws": 12,
     "best": 1,
-    "odds": 6,
+    "odds": 14.29,
     "champions": 1,
     "bestYear": 2010,
     "population": 46760000,
@@ -392,7 +392,7 @@ var data = [
     "losses": 14,
     "draws": 6,
     "best": 8,
-    "odds": 100,
+    "odds": 0.99,
     "bestYear": 1954,
     "population": 7997000,
     "gdp": 631200000000,
@@ -406,7 +406,7 @@ var data = [
     "draws": 12,
     "best": 1,
     "champions": 2,
-    "odds": 28,
+    "odds": 3.45,
     "bestYear": [1950, 1930],
     "population": 3395000,
     "gdp": 49920000000,
@@ -419,7 +419,7 @@ var data = [
     "losses": 17,
     "draws": 5,
     "best": 3,
-    "odds": 250,
+    "odds": 0.4,
     "bestYear": 1930,
     "population": 313900000,
     "gdp": 16240000000000,
@@ -645,7 +645,7 @@ var graphOdds = function() {
     return '';
   });
 
-  var yAxis = d3.svg.axis().scale(y).orient("right").ticks(10);
+  var yAxis = d3.svg.axis().scale(y).orient("right").ticks(5, "s");
 
   var svg = d3.select("svg.odds")
       .attr("width", width + margin.left + margin.right)
@@ -658,7 +658,7 @@ var graphOdds = function() {
   });
 
   x.domain(odds.map(function(d) { return d.country; }));
-  y.domain([1, d3.max(odds, function(d) { return d.odds; })]);
+  y.domain([0, d3.max(odds, function(d) { return d.odds; })]);
 
   svg.append("g")
       .attr("class", "x axis")
@@ -674,15 +674,13 @@ var graphOdds = function() {
       .data(odds)
     .enter().append("rect")
       .attr("class", function(d) {
-        if (d.odds > 2000)
-          return "bar odds-2000";
-        if (d.odds > 1000)
-          return "bar odds-1000";
-        if (d.odds > 100)
-          return "bar odds-100";
-        if (d.odds > 25)
-          return "bar odds-25";
-        return "bars odds-1"
+        if (d.odds > 20)
+          return "bar odds-20";
+        if (d.odds > 10)
+          return "bar odds-10";
+        if (d.odds > 1)
+          return "bar odds-1";
+        return "bars odds-not-1";
       })
       .attr("x", function(d) { return x(d.country); })
       .attr("width", x.rangeBand())
@@ -690,7 +688,7 @@ var graphOdds = function() {
       .attr("height", function(d) { return height - y(d.odds); });
 
   var legend = svg.selectAll(".legend")
-      .data(["> 2000 to 1", "> 1000 to 1", "> 100 to 1", "> 25 to 1", "< 25 to 1"])
+      .data(["> 20%", "> 10%", "> 1%", "< 1%"])
     .enter().append("g")
       .attr("class", "legend")
       .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
@@ -702,15 +700,13 @@ var graphOdds = function() {
       .attr("class", function(d, i) {
         switch (i) {
         case 0:
-          return "odds-2000";
+          return "odds-20";
         case 1:
-          return "odds-1000";
+          return "odds-10";
         case 2:
-          return "odds-100";
-        case 3:
-          return "odds-25";
-        case 4:
           return "odds-1";
+        case 3:
+          return "odds-not-1";
         }
       });
 
