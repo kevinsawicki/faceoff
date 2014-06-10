@@ -674,7 +674,9 @@ var graphOdds = function() {
     return '';
   });
 
-  var yAxis = d3.svg.axis().scale(y).orient("right").ticks(5, "s");
+  var yAxis = d3.svg.axis().scale(y).orient("right").ticks(5).tickFormat(function(odds) {
+    return odds + "%";
+  });
 
   var svg = d3.select("svg.odds")
       .attr("width", width + margin.left + margin.right)
