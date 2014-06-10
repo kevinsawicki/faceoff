@@ -59,7 +59,7 @@ var data = [
     "class": "belgium"
   },
   {
-    "country": "Bosnia",
+    "country": "Bosnia and Herzegovina",
     "continent": "Europe",
     "wins": 0,
     "losses": 0,
@@ -69,7 +69,7 @@ var data = [
     "population": 3834000,
     "gdp": 17470000000,
     "income": 4750,
-    "class": "bosnia"
+    "class": "bosnia-and-herzegovina"
   },
   {
     "country": "Brazil",
