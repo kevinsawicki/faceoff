@@ -19,6 +19,7 @@ var data = [
   },
   {
     "country": "Argentina",
+    "continent": "South America",
     "wins": 37,
     "losses": 20,
     "draws": 13,
