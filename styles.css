@@ -419,3 +419,23 @@ html, body {
 .population-not-10-million {
   fill: #EBAFFF;
 }
+
+.income-50k {
+  fill: #236DA0;
+}
+
+.income-30k {
+  fill: #3D87BA;
+}
+
+.income-15k {
+  fill: #56A0D3;
+}
+
+.income-5k {
+  fill: #70BAED;
+}
+
+.income-not-5k {
+  fill: #89D3FF;
+}

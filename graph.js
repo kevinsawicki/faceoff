@@ -13,6 +13,7 @@ var data = [
     "bestYear": 1982,
     "population": 38480000,
     "gdp": 205800000000,
+    "income": 5020,
     "class": "algeria"
   },
   {
@@ -26,6 +27,7 @@ var data = [
     "bestYear": 1986,
     "population": 41090000,
     "gdp": 475500000000,
+    "income": 5170,
     "class": "argentina"
   },
   {
@@ -38,6 +40,7 @@ var data = [
     "bestYear": 2006,
     "population": 22720000,
     "gdp": 1532000000000,
+    "income": 59260,
     "class": "australia"
   },
   {
@@ -50,6 +53,7 @@ var data = [
     "bestYear": 1986,
     "population": 11130000,
     "gdp": 483000000000,
+    "income": 44820,
     "class": "belgium"
   },
   {
@@ -61,6 +65,7 @@ var data = [
     "odds": 150,
     "population": 3834000,
     "gdp": 17470000000,
+    "income": 4750,
     "class": "bosnia"
   },
   {
@@ -74,6 +79,7 @@ var data = [
     "bestYear": 2002,
     "population": 198700000,
     "gdp": 2253000000000,
+    "income": 11630,
     "class": "brazil"
   },
   {
@@ -86,6 +92,7 @@ var data = [
     "bestYear": 1990,
     "population": 21700000,
     "gdp": 25320000000,
+    "income": 1170,
     "class": "cameroon"
   },
   {
@@ -98,6 +105,7 @@ var data = [
     "bestYear": 1962,
     "population": 17460000,
     "gdp": 269900000000,
+    "income": 14310,
     "class": "chile"
   },
   {
@@ -110,6 +118,7 @@ var data = [
     "bestYear": 1990,
     "population": 47700000,
     "gdp": 369600000000,
+    "income": 7020,
     "class": "colombia"
   },
   {
@@ -122,6 +131,7 @@ var data = [
     "bestYear": 1990,
     "population": 4805000,
     "gdp": 45100000000,
+    "income": 8820,
     "class": "costa-rica"
   },
   {
@@ -134,6 +144,7 @@ var data = [
     "bestYear": 1998,
     "population": 4268000,
     "gdp": 59320000000,
+    "income": 13490,
     "class": "croatia"
   },
   {
@@ -146,6 +157,7 @@ var data = [
     "bestYear": 2006,
     "population": 15490000,
     "gdp": 84040000000,
+    "income": 5170,
     "class": "ecuador"
   },
   {
@@ -159,6 +171,7 @@ var data = [
     "bestYear": 1966,
     "population": 63610000,
     "gdp": 2476000000000,
+    "income": 38500,
     "class": "england"
   },
   {
@@ -172,6 +185,7 @@ var data = [
     "bestYear": 1998,
     "population": 65700000,
     "gdp": 2611000000000,
+    "income": 41850,
     "class": "france"
   },
   {
@@ -185,6 +199,7 @@ var data = [
     "bestYear": 1990,
     "population": 80430000,
     "gdp": 3426000000000,
+    "income": 45170,
     "class": "germany"
   },
   {
@@ -197,6 +212,7 @@ var data = [
     "bestYear": 2010,
     "population": 25370000,
     "gdp": 40710000000,
+    "income": 1550,
     "class": "ghana"
   },
   {
@@ -209,6 +225,7 @@ var data = [
     "bestYear": 2010,
     "population": 11090000,
     "gdp": 248900000000,
+    "income": 23710,
     "class": "greece"
   },
   {
@@ -221,6 +238,7 @@ var data = [
     "bestYear": 1982,
     "population": 7936000,
     "gdp": 18430000000,
+    "income": 2120,
     "class": "honduras"
   },
   {
@@ -233,6 +251,7 @@ var data = [
     "bestYear": 1998,
     "population": 76420000,
     "gdp": 552400000000,
+    "income": 4330,
     "class": "iran"
   },
   {
@@ -246,6 +265,7 @@ var data = [
     "bestYear": 2006,
     "population": 59540000,
     "gdp": 2013000000000,
+    "income": 34720,
     "class": "italy"
   },
   {
@@ -258,6 +278,7 @@ var data = [
     "bestYear": 2010,
     "population": 19840000,
     "gdp": 24680000,
+    "income": 1220,
     "class": "ivory-coast"
   },
   {
@@ -270,6 +291,7 @@ var data = [
     "bestYear": 2010,
     "population": 127600000,
     "gdp": 5961000000000,
+    "income": 47870,
     "class": "japan"
   },
   {
@@ -282,6 +304,7 @@ var data = [
     "bestYear": 1986,
     "population": 120800000,
     "gdp": 1178000000000,
+    "income": 9640,
     "class": "mexico"
   },
   {
@@ -294,6 +317,7 @@ var data = [
     "bestYear": 2010,
     "population": 16750000,
     "gdp": 770100000000,
+    "income": 48110,
     "class": "netherlands"
   },
   {
@@ -306,6 +330,7 @@ var data = [
     "bestYear": 1998,
     "population": 168800000,
     "gdp": 459600000000,
+    "income": 2490,
     "class": "nigeria"
   },
   {
@@ -318,6 +343,7 @@ var data = [
     "bestYear": 1966,
     "population": 10510000,
     "gdp": 212100000000,
+    "income": 20690,
     "class": "portgual"
   },
   {
@@ -330,6 +356,7 @@ var data = [
     "bestYear": 2002,
     "population": 143500000,
     "gdp": 2015000000000,
+    "income": 12700,
     "class": "russia"
   },
   {
@@ -342,6 +369,7 @@ var data = [
     "bestYear": 1998,
     "population": 50000000,
     "gdp": 1130000000000,
+    "income": 22670,
     "class": "south-korea"
   },
   {
@@ -355,6 +383,7 @@ var data = [
     "bestYear": 2010,
     "population": 46760000,
     "gdp": 1322000000000,
+    "income": 29340,
     "class": "spain"
   },
   {
@@ -367,6 +396,7 @@ var data = [
     "bestYear": 1954,
     "population": 7997000,
     "gdp": 631200000000,
+    "income": 80970,
     "class": "switzerland"
   },
   {
@@ -380,6 +410,7 @@ var data = [
     "bestYear": 1950,
     "population": 3395000,
     "gdp": 49920000000,
+    "income": 13580,
     "class": "uruguay"
   },
   {
@@ -392,6 +423,7 @@ var data = [
     "bestYear": 1930,
     "population": 313900000,
     "gdp": 16240000000000,
+    "income": 52340,
     "class": "united-states"
   }
 ];
@@ -884,8 +916,103 @@ var graphPopulation = function() {
       .text(function(d) { return d; });
 }
 
+var graphIncome = function() {
+  var x = d3.scale.ordinal().rangeRoundBands([0, width], .1);
+  var y = d3.scale.linear().range([height, 0]);
+
+  var xAxis = d3.svg.axis().scale(x).orient("bottom").tickFormat(function(country) {
+    var flag = country.toLowerCase().replace(/ /g, '-');
+    svg.append("image")
+      .attr("x", x(country))
+      .attr("y", height + 5)
+      .attr("width", x.rangeBand())
+      .attr("height", 18)
+      .attr("xlink:href", "./assets/flags/"+ flag + ".svg")
+      .attr("preserveAspectRatio", "none")
+      .append("title")
+        .text(country);
+    return '';
+  });
+
+  var yAxis = d3.svg.axis().scale(y).orient("right").ticks(10, "s");
+
+  var svg = d3.select("svg.income")
+      .attr("width", width + margin.left + margin.right)
+      .attr("height", height + margin.top + margin.bottom)
+    .append("g")
+      .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+  var income = data.slice().sort(function(a, b) {
+    return a.income - b.income;
+  });
+
+  x.domain(income.map(function(d) { return d.country; }));
+  y.domain([1, d3.max(income, function(d) { return d.income; })]);
+
+  svg.append("g")
+      .attr("class", "x axis")
+      .attr("transform", "translate(0," + height + ")")
+      .call(xAxis);
+
+  svg.append("g")
+      .attr("class", "y axis")
+      .attr("transform", "translate(" + width + ",0)")
+      .call(yAxis);
+
+  svg.selectAll(".income")
+      .data(income)
+    .enter().append("rect")
+      .attr("class", function(d) {
+        if (d.income >= 50000)
+          return "bar income-50k";
+        if (d.income >= 30000)
+          return "bar income-30k";
+        if (d.income >= 15000)
+          return "bar income-15k";
+        if (d.income >= 5000)
+          return "bar income-5k";
+        return "bars income-not-5k";
+      })
+      .attr("x", function(d) { return x(d.country); })
+      .attr("width", x.rangeBand())
+      .attr("y", function(d) { return y(d.income); })
+      .attr("height", function(d) { return height - y(d.income); });
+
+  var legend = svg.selectAll(".legend")
+      .data(["$50,000+", "$30,000+", "$15,000+", "$5,000+", "< $5,000"])
+    .enter().append("g")
+      .attr("class", "legend")
+      .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
+
+  legend.append("rect")
+      .attr("x", 0)
+      .attr("width", 18)
+      .attr("height", 18)
+      .attr("class", function(d, i) {
+        switch (i) {
+        case 0:
+          return "income-50k";
+        case 1:
+          return "income-30k";
+        case 2:
+          return "income-15k";
+        case 3:
+          return "income-5k";
+        case 4:
+          return "income-not-5k";
+        }
+      });
+
+  legend.append("text")
+      .attr("x", 20)
+      .attr("y", 9)
+      .attr("dy", ".35em")
+      .text(function(d) { return d; });
+}
+
 graphRecords();
 graphFinishes();
 graphOdds();
 graphGdp();
 graphPopulation();
+graphIncome();
