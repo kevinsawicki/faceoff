@@ -10,12 +10,21 @@
 .footer {
   border-top: 1px solid;
   color: #fff;
-  padding: 10px;
+  padding-top: 10px;
   margin-top: 50px;
 }
 
 .footer a {
   color: #fff;
+}
+
+.footer .glyphicon {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.footer .glyphicon.credit {
+  margin-right: 8px;
 }
 
 .footer a:hover {
