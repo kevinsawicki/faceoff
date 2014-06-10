@@ -5,6 +5,7 @@ var height = 480 - margin.top - margin.bottom;
 var data = [
   {
     "country": "Algeria",
+    "continent": "Africa",
     "wins": 2,
     "losses": 5,
     "draws": 2,
@@ -45,6 +46,7 @@ var data = [
   },
   {
     "country": "Belgium",
+    "continent": "Europe",
     "wins": 10,
     "losses": 17,
     "draws": 9,
@@ -58,6 +60,7 @@ var data = [
   },
   {
     "country": "Bosnia",
+    "continent": "Europe",
     "wins": 0,
     "losses": 0,
     "draws": 0,
@@ -70,6 +73,7 @@ var data = [
   },
   {
     "country": "Brazil",
+    "continent": "South America",
     "wins": 67,
     "losses": 15,
     "draws": 15,
@@ -84,6 +88,7 @@ var data = [
   },
   {
     "country": "Cameroon",
+    "continent": "Africa",
     "wins": 4,
     "losses": 9,
     "draws": 7,
@@ -97,6 +102,7 @@ var data = [
   },
   {
     "country": "Chile",
+    "continent": "South America",
     "wins": 9,
     "losses": 14,
     "draws": 6,
@@ -110,6 +116,7 @@ var data = [
   },
   {
     "country": "Colombia",
+    "continent": "South America",
     "wins": 3,
     "losses": 8,
     "draws": 2,
@@ -123,6 +130,7 @@ var data = [
   },
   {
     "country": "Costa Rica",
+    "continent": "North America",
     "wins": 3,
     "losses": 6,
     "draws": 1,
@@ -136,6 +144,7 @@ var data = [
   },
   {
     "country": "Croatia",
+    "continent": "Europe",
     "wins": 6,
     "losses": 5,
     "draws": 2,
@@ -149,6 +158,7 @@ var data = [
   },
   {
     "country": "Ecuador",
+    "continent": "South America",
     "wins": 3,
     "losses": 0,
     "draws": 4,
@@ -162,6 +172,7 @@ var data = [
   },
   {
     "country": "England",
+    "continent": "Europe",
     "wins": 26,
     "losses": 14,
     "draws": 19,
@@ -176,6 +187,7 @@ var data = [
   },
   {
     "country": "France",
+    "continent": "Europe",
     "wins": 25,
     "losses": 18,
     "draws": 11,
@@ -190,6 +202,7 @@ var data = [
   },
   {
     "country": "Germany",
+    "continent": "Europe",
     "wins": 60,
     "losses": 20,
     "draws": 19,
@@ -204,6 +217,7 @@ var data = [
   },
   {
     "country": "Ghana",
+    "continent": "Africa",
     "wins": 4,
     "losses": 3,
     "draws": 2,
@@ -217,6 +231,7 @@ var data = [
   },
   {
     "country": "Greece",
+    "continent": "Europe",
     "wins": 1,
     "losses": 5,
     "draws": 0,
@@ -230,6 +245,7 @@ var data = [
   },
   {
     "country": "Honduras",
+    "continent": "North America",
     "wins": 0,
     "losses": 3,
     "draws": 3,
@@ -243,6 +259,7 @@ var data = [
   },
   {
     "country": "Iran",
+    "continent": "Asia",
     "wins": 1,
     "losses": 6,
     "draws": 2,
@@ -256,6 +273,7 @@ var data = [
   },
   {
     "country": "Italy",
+    "continent": "Europe",
     "wins": 44,
     "losses": 15,
     "draws": 21,
@@ -270,6 +288,7 @@ var data = [
   },
   {
     "country": "Ivory Coast",
+    "continent": "Africa",
     "wins": 2,
     "draws": 3,
     "losses": 1,
@@ -283,6 +302,7 @@ var data = [
   },
   {
     "country": "Japan",
+    "continent": "Asia",
     "wins": 4,
     "losses": 7,
     "draws": 3,
@@ -296,6 +316,7 @@ var data = [
   },
   {
     "country": "Mexico",
+    "continent": "North America",
     "wins": 12,
     "losses": 24,
     "draws": 13,
@@ -309,6 +330,7 @@ var data = [
   },
   {
     "country": "Netherlands",
+    "continent": "Europe",
     "wins": 22,
     "losses": 11,
     "draws": 10,
@@ -322,6 +344,7 @@ var data = [
   },
   {
     "country": "Nigeria",
+    "continent": "Africa",
     "wins": 4,
     "losses": 8,
     "draws": 2,
@@ -335,6 +358,7 @@ var data = [
   },
   {
     "country": "Portugal",
+    "continent": "Europe",
     "wins": 12,
     "losses": 8,
     "draws": 3,
@@ -348,6 +372,7 @@ var data = [
   },
   {
     "country": "Russia",
+    "continent": "Asia",
     "wins": 2,
     "losses": 4,
     "draws": 0,
@@ -361,6 +386,7 @@ var data = [
   },
   {
     "country": "South Korea",
+    "continent": "Asia",
     "wins": 5,
     "losses": 15,
     "draws": 8,
@@ -374,6 +400,7 @@ var data = [
   },
   {
     "country": "Spain",
+    "continent": "Europe",
     "wins": 28,
     "losses": 16,
     "draws": 12,
@@ -388,6 +415,7 @@ var data = [
   },
   {
     "country": "Switzerland",
+    "continent": "Europe",
     "wins": 9,
     "losses": 14,
     "draws": 6,
@@ -401,6 +429,7 @@ var data = [
   },
   {
     "country": "Uruguay",
+    "continent": "South America",
     "wins": 18,
     "losses": 17,
     "draws": 12,
@@ -415,6 +444,7 @@ var data = [
   },
   {
     "country": "United States",
+    "continent": "North America",
     "wins": 7,
     "losses": 17,
     "draws": 5,
@@ -427,7 +457,6 @@ var data = [
     "class": "united-states"
   }
 ];
-
 
 var graphRecords = function() {
   var x = d3.scale.ordinal().rangeRoundBands([0, width], .1);
