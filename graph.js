@@ -314,7 +314,7 @@ var data = [
     "draws": 10,
     "best": 2,
     "odds": 28,
-    "bestYear": 2010,
+    "bestYear": [2010, 1978, 1974],
     "population": 16750000,
     "gdp": 770100000000,
     "income": 48110,
