@@ -963,7 +963,7 @@ var graphIncome = function() {
     return '';
   });
 
-  var yAxis = d3.svg.axis().scale(y).orient("right").ticks(10, "s");
+  var yAxis = d3.svg.axis().scale(y).orient("right").ticks(10, "$s");
 
   var svg = d3.select("svg.income")
       .attr("width", width + margin.left + margin.right)
