@@ -148,7 +148,7 @@ html, body {
   background-image: url(./assets/crests/chile.svg);
 }
 
-.crest-columbia {
+.crest-colombia {
   background-image: url(./assets/crests/columbia.svg);
 }
 
@@ -352,4 +352,52 @@ html, body {
   text-anchor: middle;
   fill: #fff;
   font-size: 10px;
+}
+
+.gdp-ten-trillion {
+  fill: #802000;
+}
+
+.gdp-two-trillion {
+  fill: #993900;
+}
+
+.gdp-one-trillion {
+  fill: #B35300;
+}
+
+.gdp-half-trillion {
+  fill: #CC6C00;
+}
+
+.gdp-quarter-trillion {
+  fill: #E68600;
+}
+
+.gdp-not-quarter-trillion {
+  fill: #FF9F00;
+}
+
+.population-200-million {
+  fill: #6C3082;
+}
+
+.population-100-million {
+  fill: #864A9C;
+}
+
+.population-50-million {
+  fill: #9F63B5;
+}
+
+.population-25-million {
+  fill: #B97DCF;
+}
+
+.population-10-million {
+  fill: #D296E8;
+}
+
+.population-not-10-million {
+  fill: #EBAFFF;
 }
