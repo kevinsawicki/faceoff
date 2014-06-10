@@ -674,13 +674,13 @@ var graphOdds = function() {
       .data(odds)
     .enter().append("rect")
       .attr("class", function(d) {
-        if (d.odds >= 2000)
+        if (d.odds > 2000)
           return "bar odds-2000";
-        if (d.odds >= 1000)
+        if (d.odds > 1000)
           return "bar odds-1000";
-        if (d.odds >= 100)
+        if (d.odds > 100)
           return "bar odds-100";
-        if (d.odds >= 25)
+        if (d.odds > 25)
           return "bar odds-25";
         return "bars odds-1"
       })
@@ -690,7 +690,7 @@ var graphOdds = function() {
       .attr("height", function(d) { return height - y(d.odds); });
 
   var legend = svg.selectAll(".legend")
-      .data([">= 2000 to 1", ">= 1000 to 1", ">= 100 to 1", ">= 25 to 1", "< 25 to 1"])
+      .data(["> 2000 to 1", "> 1000 to 1", "> 100 to 1", "> 25 to 1", "< 25 to 1"])
     .enter().append("g")
       .attr("class", "legend")
       .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
