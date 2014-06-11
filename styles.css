@@ -59,6 +59,14 @@ html, body {
   margin-top: -.3em;
 }
 
+.stat-center {
+  text-align: center;
+}
+
+.stat-right {
+  text-align: right;
+}
+
 .tile {
   border: 3px solid #eee;
   padding: 2px 10px 2px 10px;
