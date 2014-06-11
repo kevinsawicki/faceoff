@@ -44,6 +44,10 @@
   margin-top: 50px;
 }
 
+.tournament > .row {
+  margin: 0;
+}
+
 html, body {
   height: 100%;
   font-family: 'Arimo', sans-serif;
@@ -73,7 +77,7 @@ html, body {
 }
 
 .col-md-9 {
-  min-width: 930px;
+  width: 100px;
 }
 
 .wc-1 {
@@ -247,4 +251,41 @@ html, body {
 
 .income-not-5k {
   fill: #89D3FF;
+}
+
+body {
+  min-width: 970px;
+}
+
+.container {
+  width: 970px;
+  max-width: none !important;
+}
+
+.container .navbar-header {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.navbar-header {
+  float: left;
+}
+
+.navbar-brand {
+  margin-left: -15px;
+}
+
+.navbar-nav {
+  float: left;
+  margin: 0;
+}
+.navbar-nav > li {
+  float: left;
+}
+.navbar-nav > li > a {
+  padding: 15px;
+}
+
+.navbar-nav.navbar-right {
+  float: right;
 }
