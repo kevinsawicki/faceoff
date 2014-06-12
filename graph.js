@@ -757,7 +757,7 @@ var graphOdds = function() {
 var graphGdp = function() {
   var x = d3.scale.ordinal().rangeRoundBands([0, width], .1);
   var y = d3.scale.linear().range([height, 0]);
-  var titleFormat = d3.format(' $,d');
+  var titleFormat = d3.format(' $s');
 
   var xAxis = d3.svg.axis().scale(x).orient("bottom").tickFormat(function(country) {
     var flag = country.toLowerCase().replace(/ /g, '-');
@@ -769,7 +769,7 @@ var graphGdp = function() {
       .attr("xlink:href", "./assets/flags/"+ flag + ".svg")
       .attr("preserveAspectRatio", "none")
       .append("title")
-        .text(country + titleFormat(dataByCountry[country].gdp));
+        .text(country + titleFormat(dataByCountry[country].gdp).replace(/G/, 'B'));
     return '';
   });
 
