@@ -52,6 +52,10 @@
   margin: 0;
 }
 
+.social-buttons > iframe {
+  width: 80px !important;
+}
+
 html, body {
   height: 100%;
   font-family: 'Arimo', sans-serif;
