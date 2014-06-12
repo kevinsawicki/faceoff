@@ -508,8 +508,11 @@ var graphRecords = function() {
       .attr("height", 18)
       .attr("xlink:href", "./assets/flags/"+ flag + ".svg")
       .attr("preserveAspectRatio", "none")
-      .append("title")
-        .text(country + " " + data.wins + "-" + data.draws + "-" + data.losses);
+      .attr("class", "flag")
+      .attr("data-toggle", "tooltip")
+      .attr("data-placement", "bottom")
+      .attr("title", country + " " + data.wins + "-" + data.draws + "-" + data.losses);
+
     return '';
   });
 
@@ -555,8 +558,9 @@ var graphRecords = function() {
       .attr("width", x.rangeBand())
       .attr("y", function(d) { return y(d.wins + d.losses + d.draws); })
       .attr("height", function(d) { return height - y(d.wins); })
-      .append("title")
-        .text(function(d) { return d.country + " " + d.wins + "-" + d.draws + "-" + d.losses });
+      .attr("data-toggle", "tooltip")
+      .attr("data-placement", "left")
+      .attr("title", function(d) { return d.country + " " + d.wins + " wins"; });
 
   svg.selectAll(".draws")
       .data(records)
@@ -565,7 +569,10 @@ var graphRecords = function() {
       .attr("x", function(d) { return x(d.country); })
       .attr("width", x.rangeBand())
       .attr("y", function(d) { return y(d.losses + d.draws); })
-      .attr("height", function(d) { return height - y(d.draws); });
+      .attr("height", function(d) { return height - y(d.draws); })
+      .attr("data-toggle", "tooltip")
+      .attr("data-placement", "left")
+      .attr("title", function(d) { return d.country + " " + d.draws + " draws"; });
 
   svg.selectAll(".losses")
       .data(records)
@@ -574,7 +581,10 @@ var graphRecords = function() {
       .attr("x", function(d) { return x(d.country); })
       .attr("width", x.rangeBand())
       .attr("y", function(d) { return y(d.losses); })
-      .attr("height", function(d) { return height - y(d.losses); });
+      .attr("height", function(d) { return height - y(d.losses); })
+      .attr("data-toggle", "tooltip")
+      .attr("data-placement", "left")
+      .attr("title", function(d) { return d.country + " " + d.losses + " losses"; });
 
   var legend = svg.selectAll(".legend")
       .data(["wins", "draws", "losses"])
@@ -608,8 +618,10 @@ var graphFinishes = function() {
       .attr("height", 18)
       .attr("xlink:href", "./assets/flags/"+ flag + ".svg")
       .attr("preserveAspectRatio", "none")
-      .append("title")
-        .text(country);
+      .attr('class', 'flag')
+      .attr("data-toggle", "tooltip")
+      .attr("data-placement", "bottom")
+      .attr("title", country);
     return '';
   });
 
@@ -647,8 +659,9 @@ var graphFinishes = function() {
       .attr("width", x.rangeBand())
       .attr("y", function(d) { return y(33 - d.best); })
       .attr("height", function(d) { return Math.max(0, height - y(33 - d.best)); })
-      .append("title")
-        .text(function(d) { return d.country })
+      .attr("data-toggle", "tooltip")
+      .attr("data-placement", "top")
+      .attr("title", function(d) { return d.country; });
 
   var years = finishes.filter(function(d) { return !!d.bestYear && (d.bestYear.length > 0 || +d.bestYear > 0); });
   for (var i = 0; i < years.length; i++)
@@ -710,8 +723,10 @@ var graphOdds = function() {
       .attr("height", 18)
       .attr("xlink:href", "./assets/flags/"+ flag + ".svg")
       .attr("preserveAspectRatio", "none")
-      .append("title")
-        .text(country + " " + dataByCountry[country].odds + "%");
+      .attr('class', 'flag')
+      .attr("data-toggle", "tooltip")
+      .attr("data-placement", "bottom")
+      .attr("title", country + " " + dataByCountry[country].odds + "%" + " (" + dataByCountry[country].fullOdds + ")");
     return '';
   });
 
@@ -757,7 +772,10 @@ var graphOdds = function() {
       .attr("x", function(d) { return x(d.country); })
       .attr("width", x.rangeBand())
       .attr("y", function(d) { return y(d.odds); })
-      .attr("height", function(d) { return height - y(d.odds); });
+      .attr("height", function(d) { return height - y(d.odds); })
+      .attr("data-toggle", "tooltip")
+      .attr("data-placement", "top")
+      .attr("title", function(d) { return d.country + " " + d.odds + "%" + " (" + d.fullOdds + ")" });
 
   var legend = svg.selectAll(".legend")
       .data(["> 20%", "> 10%", "> 1%", "< 1%"])
@@ -803,8 +821,10 @@ var graphGdp = function() {
       .attr("height", 18)
       .attr("xlink:href", "./assets/flags/"+ flag + ".svg")
       .attr("preserveAspectRatio", "none")
-      .append("title")
-        .text(country + titleFormat(dataByCountry[country].gdp).replace(/G/, 'B'));
+      .attr('class', 'flag')
+      .attr("data-toggle", "tooltip")
+      .attr("data-placement", "bottom")
+      .attr("title", country + titleFormat(dataByCountry[country].gdp).replace(/G/, 'B'));
     return '';
   });
 
@@ -852,7 +872,10 @@ var graphGdp = function() {
       .attr("x", function(d) { return x(d.country); })
       .attr("width", x.rangeBand())
       .attr("y", function(d) { return y(d.gdp); })
-      .attr("height", function(d) { return height - y(d.gdp); });
+      .attr("height", function(d) { return height - y(d.gdp); })
+      .attr("data-toggle", "tooltip")
+      .attr("data-placement", "top")
+      .attr("title", function(d) { return d.country + titleFormat(d.gdp).replace(/G/, 'B') });
 
   var legend = svg.selectAll(".legend")
       .data(["10+ trillion", "2+ trillion", "1+ trillion", "500+ billion", "250+ billion", "< 250 billion"])
@@ -902,8 +925,10 @@ var graphPopulation = function() {
       .attr("height", 18)
       .attr("xlink:href", "./assets/flags/"+ flag + ".svg")
       .attr("preserveAspectRatio", "none")
-      .append("title")
-        .text(country + titleFormat(dataByCountry[country].population));
+      .attr('class', 'flag')
+      .attr("data-toggle", "tooltip")
+      .attr("data-placement", "bottom")
+      .attr("title", country + titleFormat(dataByCountry[country].population));
     return '';
   });
 
@@ -951,7 +976,10 @@ var graphPopulation = function() {
       .attr("x", function(d) { return x(d.country); })
       .attr("width", x.rangeBand())
       .attr("y", function(d) { return y(d.population); })
-      .attr("height", function(d) { return height - y(d.population); });
+      .attr("height", function(d) { return height - y(d.population); })
+      .attr("data-toggle", "tooltip")
+      .attr("data-placement", "top")
+      .attr("title", function(d) { return d.country + titleFormat(d.population) });
 
   var legend = svg.selectAll(".legend")
       .data(["200+ million", "100+ million", "50+ million", "25+ million", "10+ million", "< 10 million"])
@@ -1001,8 +1029,10 @@ var graphIncome = function() {
       .attr("height", 18)
       .attr("xlink:href", "./assets/flags/"+ flag + ".svg")
       .attr("preserveAspectRatio", "none")
-      .append("title")
-        .text(country + titleFormat(dataByCountry[country].income));
+      .attr('class', 'flag')
+      .attr("data-toggle", "tooltip")
+      .attr("data-placement", "bottom")
+      .attr("title", country + titleFormat(dataByCountry[country].income));
     return '';
   });
 
@@ -1048,7 +1078,10 @@ var graphIncome = function() {
       .attr("x", function(d) { return x(d.country); })
       .attr("width", x.rangeBand())
       .attr("y", function(d) { return y(d.income); })
-      .attr("height", function(d) { return height - y(d.income); });
+      .attr("height", function(d) { return height - y(d.income); })
+      .attr("data-toggle", "tooltip")
+      .attr("data-placement", "top")
+      .attr("title", function(d) { return d.country + titleFormat(d.income); });
 
   var legend = svg.selectAll(".legend")
       .data(["$50,000+", "$30,000+", "$15,000+", "$5,000+", "< $5,000"])
