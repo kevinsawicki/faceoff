@@ -523,7 +523,9 @@ var graphRecords = function() {
       .attr("x", function(d) { return x(d.country); })
       .attr("width", x.rangeBand())
       .attr("y", function(d) { return y(d.wins + d.losses + d.draws); })
-      .attr("height", function(d) { return height - y(d.wins); });
+      .attr("height", function(d) { return height - y(d.wins); })
+      .append("title")
+        .text(function(d) { return d.country + " " + d.wins + "-" + d.draws + "-" + d.losses });
 
   svg.selectAll(".draws")
       .data(records)
