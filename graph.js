@@ -315,6 +315,7 @@ var data = [
     "losses": 3,
     "best": 24,
     "odds": 0.66,
+    "fullOdds": "150 to 1",
     "bestYear": 2010,
     "population": 19840000,
     "gdp": 24680000000,
