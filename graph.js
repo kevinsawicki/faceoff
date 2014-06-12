@@ -297,7 +297,7 @@ var data = [
     "odds": 0.66,
     "bestYear": 2010,
     "population": 19840000,
-    "gdp": 24680000,
+    "gdp": 24680000000,
     "income": 1220,
     "class": "ivory-coast"
   },
