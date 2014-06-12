@@ -615,7 +615,9 @@ var graphFinishes = function() {
       .attr("x", function(d) { return x(d.country); })
       .attr("width", x.rangeBand())
       .attr("y", function(d) { return y(33 - d.best); })
-      .attr("height", function(d) { return Math.max(0, height - y(33 - d.best)); });
+      .attr("height", function(d) { return Math.max(0, height - y(33 - d.best)); })
+      .append("title")
+        .text(function(d) { return d.country })
 
   var years = finishes.filter(function(d) { return !!d.bestYear && (d.bestYear.length > 0 || +d.bestYear > 0); });
   for (var i = 0; i < years.length; i++)
