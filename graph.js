@@ -419,7 +419,7 @@ var data = [
     "draws": 8,
     "best": 4,
     "odds": 0.4,
-    "fulOdds": "250 to 1",
+    "fullOdds": "250 to 1",
     "bestYear": 1998,
     "population": 50000000,
     "gdp": 1130000000000,
