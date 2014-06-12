@@ -459,12 +459,17 @@ var data = [
   }
 ];
 
+var dataByCountry = {};
+for (var i = 0; i < data.length; i++)
+  dataByCountry[data[i].country] = data[i];
+
 var graphRecords = function() {
   var x = d3.scale.ordinal().rangeRoundBands([0, width], .1);
   var y = d3.scale.linear().range([height, 0]);
 
   var xAxis = d3.svg.axis().scale(x).orient("bottom").tickFormat(function(country) {
     var flag = country.toLowerCase().replace(/ /g, '-');
+    var data = dataByCountry[country];
     svg.append("image")
       .attr("x", x(country))
       .attr("y", height + 5)
@@ -473,7 +478,7 @@ var graphRecords = function() {
       .attr("xlink:href", "./assets/flags/"+ flag + ".svg")
       .attr("preserveAspectRatio", "none")
       .append("title")
-        .text(country);
+        .text(country + " " + data.wins + "-" + data.draws + "-" + data.losses);
     return '';
   });
 
@@ -671,7 +676,7 @@ var graphOdds = function() {
       .attr("xlink:href", "./assets/flags/"+ flag + ".svg")
       .attr("preserveAspectRatio", "none")
       .append("title")
-        .text(country);
+        .text(country + " " + dataByCountry[country].odds + "%");
     return '';
   });
 
@@ -959,7 +964,7 @@ var graphIncome = function() {
       .attr("xlink:href", "./assets/flags/"+ flag + ".svg")
       .attr("preserveAspectRatio", "none")
       .append("title")
-        .text(country);
+        .text(country + " $" + dataByCountry[country].income);
     return '';
   });
 
