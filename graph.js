@@ -768,7 +768,7 @@ var graphOdds = function() {
           return "bar odds-10";
         if (d.odds > 1)
           return "bar odds-1";
-        return "bars odds-not-1";
+        return "bar odds-not-1";
       })
       .attr("x", function(d) { return x(d.country); })
       .attr("width", x.rangeBand())
@@ -868,7 +868,7 @@ var graphGdp = function() {
           return "bar gdp-half-trillion";
         if (d.gdp >= 250000000000)
           return "bar gdp-half-trillion";
-        return "bars gdp-not-quarter-trillion";
+        return "bar gdp-not-quarter-trillion";
       })
       .attr("x", function(d) { return x(d.country); })
       .attr("width", x.rangeBand())
@@ -972,7 +972,7 @@ var graphPopulation = function() {
           return "bar population-25-million";
         if (d.population >= 10000000)
           return "bar population-10-million";
-        return "bars population-not-10-million";
+        return "bar population-not-10-million";
       })
       .attr("x", function(d) { return x(d.country); })
       .attr("width", x.rangeBand())
@@ -1074,7 +1074,7 @@ var graphIncome = function() {
           return "bar income-15k";
         if (d.income >= 5000)
           return "bar income-5k";
-        return "bars income-not-5k";
+        return "bar income-not-5k";
       })
       .attr("x", function(d) { return x(d.country); })
       .attr("width", x.rangeBand())
