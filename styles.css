@@ -257,6 +257,23 @@ html, body {
   fill: #89D3FF;
 }
 
+.tooltip-inner {
+  background: #333;
+  color: #fff;
+}
+
+.tooltip.top .tooltip-arrow {
+  border-top-color: #333;
+}
+
+.tooltip.bottom .tooltip-arrow {
+  border-bottom-color: #333;
+}
+
+.tooltip.left .tooltip-arrow {
+  border-left-color: #333;
+}
+
 body {
   min-width: 970px;
 }
