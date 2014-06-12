@@ -757,6 +757,7 @@ var graphOdds = function() {
 var graphGdp = function() {
   var x = d3.scale.ordinal().rangeRoundBands([0, width], .1);
   var y = d3.scale.linear().range([height, 0]);
+  var titleFormat = d3.format(' $,d');
 
   var xAxis = d3.svg.axis().scale(x).orient("bottom").tickFormat(function(country) {
     var flag = country.toLowerCase().replace(/ /g, '-');
@@ -768,7 +769,7 @@ var graphGdp = function() {
       .attr("xlink:href", "./assets/flags/"+ flag + ".svg")
       .attr("preserveAspectRatio", "none")
       .append("title")
-        .text(country);
+        .text(country + titleFormat(dataByCountry[country].gdp));
     return '';
   });
 
@@ -855,6 +856,7 @@ var graphGdp = function() {
 var graphPopulation = function() {
   var x = d3.scale.ordinal().rangeRoundBands([0, width], .1);
   var y = d3.scale.linear().range([height, 0]);
+  var titleFormat = d3.format(' s');
 
   var xAxis = d3.svg.axis().scale(x).orient("bottom").tickFormat(function(country) {
     var flag = country.toLowerCase().replace(/ /g, '-');
@@ -866,7 +868,7 @@ var graphPopulation = function() {
       .attr("xlink:href", "./assets/flags/"+ flag + ".svg")
       .attr("preserveAspectRatio", "none")
       .append("title")
-        .text(country);
+        .text(country + titleFormat(dataByCountry[country].population));
     return '';
   });
 
@@ -953,6 +955,7 @@ var graphPopulation = function() {
 var graphIncome = function() {
   var x = d3.scale.ordinal().rangeRoundBands([0, width], .1);
   var y = d3.scale.linear().range([height, 0]);
+  var titleFormat = d3.format(' $,d');
 
   var xAxis = d3.svg.axis().scale(x).orient("bottom").tickFormat(function(country) {
     var flag = country.toLowerCase().replace(/ /g, '-');
@@ -964,7 +967,7 @@ var graphIncome = function() {
       .attr("xlink:href", "./assets/flags/"+ flag + ".svg")
       .attr("preserveAspectRatio", "none")
       .append("title")
-        .text(country + " $" + dataByCountry[country].income);
+        .text(country + titleFormat(dataByCountry[country].income));
     return '';
   });
 
