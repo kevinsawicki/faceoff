@@ -25,6 +25,8 @@ var data = [
     "losses": 20,
     "draws": 13,
     "best": 1,
+    "firsts": [1986, 1978],
+    "seconds": [1990, 1930],
     "odds": 20,
     "fullOdds": "4 to 1",
     "champions": 2,
@@ -54,6 +56,7 @@ var data = [
     "wins": 10,
     "losses": 17,
     "draws": 9,
+    "fourths": [1986],
     "best": 4,
     "odds": 4.76,
     "fullOdds": "20 to 1",
@@ -83,6 +86,10 @@ var data = [
     "wins": 67,
     "losses": 15,
     "draws": 15,
+    "firsts": [2002, 1994, 1970, 1962, 1958],
+    "seconds": [1998, 1950],
+    "thirds": [1938, 1978],
+    "fourths": [1974],
     "best": 1,
     "odds": 26.67,
     "fullOdds": "11 to 4",
@@ -114,6 +121,7 @@ var data = [
     "wins": 9,
     "losses": 14,
     "draws": 6,
+    "thirds": [1962],
     "best": 3,
     "odds": 1.96,
     "fullOdds": "50 to 1",
@@ -159,6 +167,7 @@ var data = [
     "wins": 6,
     "losses": 5,
     "draws": 2,
+    "thirds": [1998],
     "best": 3,
     "odds": 0.57,
     "fullOdds": "175 to 1",
@@ -189,6 +198,8 @@ var data = [
     "wins": 26,
     "losses": 14,
     "draws": 19,
+    "firsts": [1966],
+    "fourths": [1990],
     "best": 1,
     "odds": 3.85,
     "fullOdds": "25 to 1",
@@ -205,6 +216,10 @@ var data = [
     "wins": 25,
     "losses": 18,
     "draws": 11,
+    "firsts": [1998],
+    "seconds": [2006],
+    "thirds": [1986, 1958],
+    "fourths": [1982],
     "best": 1,
     "odds": 4.35,
     "fullOdds": "22 to 1",
@@ -221,6 +236,10 @@ var data = [
     "wins": 60,
     "losses": 20,
     "draws": 19,
+    "firsts": [1990, 1974, 1954],
+    "seconds": [2002, 1986, 1982, 1966],
+    "thirds": [2010, 2006, 1970, 1934],
+    "fourths": [1958],
     "best": 1,
     "odds": 14.29,
     "fullOdds": "6 to 1",
@@ -297,6 +316,10 @@ var data = [
     "wins": 44,
     "losses": 15,
     "draws": 21,
+    "firsts": [2006, 1982, 1938, 1934],
+    "seconds": [1994, 1970],
+    "thirds": [1990],
+    "fourths": [1978],
     "best": 1,
     "odds": 3.85,
     "fullOdds": "25 to 1",
@@ -358,6 +381,8 @@ var data = [
     "wins": 22,
     "losses": 11,
     "draws": 10,
+    "seconds": [2010, 1978, 1974],
+    "fourths": [1998],
     "best": 2,
     "odds": 3.45,
     "fullOdds": "28 to 1",
@@ -388,6 +413,8 @@ var data = [
     "wins": 12,
     "losses": 8,
     "draws": 3,
+    "thirds": [1966],
+    "fourths": [2006],
     "best": 3,
     "odds": 4.35,
     "fullOdds": "22 to 1",
@@ -418,6 +445,7 @@ var data = [
     "wins": 5,
     "losses": 15,
     "draws": 8,
+    "fourths": [2002],
     "best": 4,
     "odds": 0.4,
     "fullOdds": "250 to 1",
@@ -433,6 +461,8 @@ var data = [
     "wins": 28,
     "losses": 16,
     "draws": 12,
+    "firsts": [2010],
+    "fourths": [1950],
     "best": 1,
     "odds": 14.29,
     "fullOdds": "6 to 1",
@@ -464,6 +494,8 @@ var data = [
     "wins": 18,
     "losses": 17,
     "draws": 12,
+    "firsts": [1950, 1930],
+    "fourths": [2010, 1970, 1954],
     "best": 1,
     "champions": 2,
     "odds": 3.45,
@@ -480,6 +512,7 @@ var data = [
     "wins": 7,
     "losses": 17,
     "draws": 5,
+    "thirds": [1930],
     "best": 3,
     "odds": 0.4,
     "fullOdds": "250 to 1",
@@ -606,7 +639,7 @@ var graphRecords = function() {
       .text(function(d) { return d; });
 }
 
-var graphFinishes = function() {
+var graphTopFinishes = function() {
   var x = d3.scale.ordinal().rangeRoundBands([0, width], .1);
   var y = d3.scale.linear().range([height, 0]);
 
@@ -701,6 +734,242 @@ var graphFinishes = function() {
           return "best-20";
         case 6:
           return "best-30";
+        }
+      });
+
+  legend.append("text")
+      .attr("x", 20)
+      .attr("y", 9)
+      .attr("dy", ".35em")
+      .text(function(d) { return d; });
+}
+
+var graphTopFourFinishes = function() {
+  var x = d3.scale.ordinal().rangeRoundBands([0, width], .1);
+  var y = d3.scale.linear().range([height, 0]);
+
+  var xAxis = d3.svg.axis().scale(x).orient("bottom").tickFormat(function(country) {
+    var flag = country.toLowerCase().replace(/ /g, '-');
+    var data = dataByCountry[country];
+    svg.append("image")
+      .attr("x", x(country))
+      .attr("y", height + 5)
+      .attr("width", x.rangeBand())
+      .attr("height", 18)
+      .attr("xlink:href", "./assets/flags/"+ flag + ".png")
+      .attr("preserveAspectRatio", "none")
+      .attr("class", "flag")
+      .attr("data-toggle", "tooltip")
+      .attr("data-placement", "bottom")
+      .attr("title", country);
+
+    return '';
+  });
+
+  var yAxis = d3.svg.axis().scale(y).orient("right").ticks(10, "s");
+
+  var svg = d3.select("svg.top-4")
+      .attr("width", width + margin.left + margin.right)
+      .attr("height", height + margin.top + margin.bottom)
+    .append("g")
+      .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+  var finishes = data.slice().sort(function(a, b) {
+    var firstA  = a.firsts  ? a.firsts.length  : 0;
+    var secondA = a.seconds ? a.seconds.length : 0;
+    var thirdA  = a.thirds  ? a.thirds.length  : 0;
+    var fourthA = a.fourths ? a.fourths.length : 0;
+
+    var firstB  = b.firsts  ? b.firsts.length  : 0;
+    var secondB = b.seconds ? b.seconds.length : 0;
+    var thirdB  = b.thirds  ? b.thirds.length  : 0;
+    var fourthB = b.fourths ? b.fourths.length : 0;
+
+    var totalA = firstA + secondA + thirdA + fourthA;
+    var totalB = firstB + secondB + thirdB + fourthB;
+    if (totalA === totalB) {
+      if (firstA !== firstB)
+        return firstA - firstB;
+      if (secondA !== secondB)
+        return secondA - secondB;
+      if (thirdA !== thirdB)
+        return thirdA - thirdB;
+      if (fourthA !== fourthB)
+        return fourthA - fourthB;
+      if (a.wins !== b.wins)
+        return a.wins - b.wins;
+      else if (a.draws !== b.draws)
+        return a.draws - b.draws;
+      return b.losses - a.losses;
+    }
+    return totalA - totalB;
+  });
+
+  x.domain(finishes.map(function(d) { return d.country; }));
+  y.domain([0, d3.max(finishes, function(d) {
+    var firsts  = d.firsts   ? d.firsts.length : 0;
+    var seconds = d.seconds  ? d.seconds.length : 0;
+    var thirds  = d.thirds   ? d.thirds.length : 0;
+    var fourths = d.fourths  ? d.fourths.length : 0;
+    return firsts + seconds + thirds + fourths;
+  })]);
+
+  svg.append("g")
+      .attr("class", "x axis")
+      .attr("transform", "translate(0," + height + ")")
+      .call(xAxis);
+
+  svg.append("g")
+      .attr("class", "y axis")
+      .attr("transform", "translate(" + width + ",0)")
+      .call(yAxis);
+
+  svg.selectAll(".firsts")
+      .data(finishes)
+    .enter().append("rect")
+      .attr("class", function(d) { return "bar best-1 " + d.class; })
+      .attr("x", function(d) { return x(d.country); })
+      .attr("width", x.rangeBand())
+      .attr("y", function(d) {
+        var firsts   = d.firsts  ? d.firsts.length : 0;
+        var seconds  = d.seconds ? d.seconds.length : 0;
+        var thirds   = d.thirds  ? d.thirds.length : 0;
+        var fourths  = d.fourths ? d.fourths.length : 0;
+        return y(firsts + seconds + thirds + fourths);
+      })
+      .attr("height", function(d) { return height - y(d.firsts ? d.firsts.length : 0); })
+      .attr("data-toggle", "tooltip")
+      .attr("data-placement", "left")
+      .attr("title", function(d) { return d.country + " Wins: " + (d.firsts ? d.firsts.length : 0); });
+
+  svg.selectAll(".seconds")
+      .data(finishes)
+    .enter().append("rect")
+      .attr("class", function(d) { return "bar best-2 "+ d.class; })
+      .attr("x", function(d) { return x(d.country); })
+      .attr("width", x.rangeBand())
+      .attr("y", function(d) {
+        var seconds  = d.seconds ? d.seconds.length : 0;
+        var thirds   = d.thirds  ? d.thirds.length : 0;
+        var fourths  = d.fourths ? d.fourths.length : 0;
+        return y(seconds + thirds + fourths);
+      })
+      .attr("height", function(d) { return height - y(d.seconds ? d.seconds.length : 0); })
+      .attr("data-toggle", "tooltip")
+      .attr("data-placement", "left")
+      .attr("title", function(d) { return d.country + " Runner up: " + (d.seconds ? d.seconds.length : 0); });
+
+  svg.selectAll(".thirds")
+      .data(finishes)
+    .enter().append("rect")
+      .attr("class", function(d) { return "bar best-3 "+ d.class; })
+      .attr("x", function(d) { return x(d.country); })
+      .attr("width", x.rangeBand())
+      .attr("y", function(d) { return y(d.losses); })
+      .attr("y", function(d) {
+        var thirds   = d.thirds ? d.thirds.length : 0;
+        var fourths  = d.fourths ? d.fourths.length : 0;
+        return y(thirds + fourths);
+      })
+      .attr("height", function(d) { return height - y(d.thirds ? d.thirds.length : 0); })
+      .attr("data-toggle", "tooltip")
+      .attr("data-placement", "left")
+      .attr("title", function(d) { return d.country + " 3rd place: " + (d.thirds ? d.thirds.length : 0); });
+
+  svg.selectAll(".fourths")
+      .data(finishes)
+    .enter().append("rect")
+      .attr("class", function(d) { return "bar best-4 "+ d.class; })
+      .attr("x", function(d) { return x(d.country); })
+      .attr("width", x.rangeBand())
+      .attr("y", function(d) { return y(d.fourths ? d.fourths.length : 0); })
+      .attr("height", function(d) { return height - y(d.fourths ? d.fourths.length : 0); })
+      .attr("data-toggle", "tooltip")
+      .attr("data-placement", "left")
+      .attr("title", function(d) { return d.country + " 4th place: " + (d.fourths ? d.fourths.length : 0); });
+
+  for (var i = 0; i < finishes.length; i++) {
+    var d = finishes[i];
+
+    if (d.firsts) {
+      svg.selectAll(".firsts-" + d.country)
+          .data(d.firsts)
+        .enter().append("text")
+          .attr("class", "years")
+          .attr("x", function() { return x(d.country) + 12; })
+          .attr("y", function(_d, k) {
+            var seconds  = d.seconds ? d.seconds.length : 0;
+            var thirds   = d.thirds  ? d.thirds.length : 0;
+            var fourths  = d.fourths ? d.fourths.length : 0;
+            return y(seconds + thirds + fourths) - (16 * (k + 1));
+          })
+          .attr("dy", ".71em")
+          .text(function(year) { return year; });
+    }
+
+    if (d.seconds) {
+      svg.selectAll(".second-years-" + d.country)
+          .data(d.seconds)
+        .enter().append("text")
+          .attr("class", "years")
+          .attr("x", function() { return x(d.country) + 12; })
+          .attr("y", function(_d, k) {
+            var thirds   = d.thirds  ? d.thirds.length : 0;
+            var fourths  = d.fourths ? d.fourths.length : 0;
+            return y(thirds + fourths) - (16 * (k + 1));
+          })
+          .attr("dy", ".71em")
+          .text(function(year) { return year; });
+    }
+
+    if (d.thirds) {
+      svg.selectAll(".third-years-" + d.country)
+          .data(d.thirds)
+        .enter().append("text")
+          .attr("class", "years")
+          .attr("x", function() { return x(d.country) + 12; })
+          .attr("y", function(_d, k) {
+            var fourths  = d.fourths ? d.fourths.length : 0;
+            return y(fourths) - (16 * (k + 1));
+          })
+          .attr("dy", ".71em")
+          .text(function(year) { return year; });
+    }
+
+    if (d.fourths) {
+      svg.selectAll(".third-years-" + d.country)
+          .data(d.fourths)
+        .enter().append("text")
+          .attr("class", "years")
+          .attr("x", function() { return x(d.country) + 12; })
+          .attr("y", function(_d, k) {
+            return y(0) - (16 * (k + 1));
+          })
+          .attr("dy", ".71em")
+          .text(function(year) { return year; });
+    }
+  }
+
+  var legend = svg.selectAll(".legend")
+      .data(["1st", "2nd", "3rd", "4th"])
+    .enter().append("g")
+      .attr("class", "legend")
+      .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
+
+  legend.append("rect")
+      .attr("x", 0)
+      .attr("width", 18)
+      .attr("height", 18)
+      .attr("class", function(d, i) {
+        switch (i) {
+        case 0:
+          return "best-1";
+        case 1:
+          return "best-2";
+        case 2:
+          return "best-3";
+        case 3:
+          return "best-4";
         }
       });
 
@@ -1117,7 +1386,8 @@ var graphIncome = function() {
 }
 
 graphRecords();
-graphFinishes();
+graphTopFinishes();
+graphTopFourFinishes();
 graphOdds();
 graphGdp();
 graphPopulation();
