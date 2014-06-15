@@ -840,7 +840,7 @@ var graphTopFourFinishes = function() {
       .attr("height", function(d) { return height - y(d.firsts ? d.firsts.length : 0); })
       .attr("data-toggle", "tooltip")
       .attr("data-placement", "left")
-      .attr("title", function(d) { return d.country + " Wins: " + (d.firsts ? d.firsts.length : 0); });
+      .attr("title", function(d) { return d.country + " 1st place: " + (d.firsts ? d.firsts.length : 0); });
 
   svg.selectAll(".seconds")
       .data(finishes)
@@ -857,7 +857,7 @@ var graphTopFourFinishes = function() {
       .attr("height", function(d) { return height - y(d.seconds ? d.seconds.length : 0); })
       .attr("data-toggle", "tooltip")
       .attr("data-placement", "left")
-      .attr("title", function(d) { return d.country + " Runner up: " + (d.seconds ? d.seconds.length : 0); });
+      .attr("title", function(d) { return d.country + " 2nd place: " + (d.seconds ? d.seconds.length : 0); });
 
   svg.selectAll(".thirds")
       .data(finishes)
