@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
     <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Play|Arimo'>
     <link rel="stylesheet" href="./styles.css">
-    <!-- <script src="http://d3js.org/d3.v3.min.js"></script> -->
+    <script src="http://d3js.org/d3.v3.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
     <script>
@@ -49,6 +49,27 @@
 
       <div id="2015" class="tournament">
         <h1>2015 World Cup Primer</h1>
+
+        <div id="records-2015" class="graph">
+          <h1>World Cup Records</h1>
+          <p>Below is a graph of the records of the 24 countries playing in the 2015 World Cup.</p>
+          <p>The records include matches played in the previous 6 World Cup tournaments between 1991 and 2011.</p>
+          <svg class="records"></svg>
+        </div>
+
+        <div id="finishes-2015" class="graph">
+          <h1>World Cup Best Finishes</h1>
+          <p>Below is a graph of the furthest each country has advanced in the previous 6 World Cup tournaments between 1991 and 2011.</p>
+          <p>The year of their best finish is shown at the bottom of the graph.</p>
+          <svg class="finishes"></svg>
+        </div>
+
+        <div id="top-4-2015" class="graph">
+          <h1>World Cup Top 4 Finishes</h1>
+          <p>Below is a graph of finishes in the top 4 each country has had in the previous 6 World Cup tournaments between 1991 and 2011.</p>
+          <p>The year of each top 4 finish is shown inside the respective bar.</p>
+          <svg class="top-4"></svg>
+        </div>
 
       </div>
 
@@ -322,7 +343,7 @@
 
       </div>
 
-      <div id="records" class="graph">
+      <div id="records-2014" class="graph">
         <h1>World Cup Records</h1>
         <p>Below is a graph of the records of the 32 countries playing in the 2014 World Cup.</p>
         <p>The records include matches played in the previous 19 World Cup tournaments between 1930 and 2010.</p>
@@ -378,7 +399,7 @@
       </div>
 
     </div>
-    <!-- <script src="./graph.js"></script> -->
+    <script src="./graph.js"></script>
 
     <footer class="footer">
       <div class="container">

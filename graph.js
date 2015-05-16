@@ -406,7 +406,7 @@ var graphRecords = function() {
 
   var yAxis = d3.svg.axis().scale(y).orient("right").ticks(10, "s");
 
-  var svg = d3.select("svg.records")
+  var svg = d3.select("#records-2015 svg.records")
       .attr("width", width + margin.left + margin.right)
       .attr("height", height + margin.top + margin.bottom)
     .append("g")
@@ -515,7 +515,7 @@ var graphTopFinishes = function() {
 
   var yAxis = d3.svg.axis().scale(y).orient("right").ticks(0, "s");
 
-  var svg = d3.select("svg.finishes")
+  var svg = d3.select("#finishes-2015 svg.finishes")
       .attr("width", width + margin.left + margin.right)
       .attr("height", height + margin.top + margin.bottom)
     .append("g")
@@ -622,7 +622,7 @@ var graphTopFourFinishes = function() {
 
   var yAxis = d3.svg.axis().scale(y).orient("right").ticks(10, "s");
 
-  var svg = d3.select("svg.top-4")
+  var svg = d3.select("#top-4-2015 svg.top-4")
       .attr("width", width + margin.left + margin.right)
       .attr("height", height + margin.top + margin.bottom)
     .append("g")
@@ -1242,7 +1242,7 @@ var graphIncome = function() {
 graphRecords();
 graphTopFinishes();
 graphTopFourFinishes();
-graphOdds();
-graphGdp();
-graphPopulation();
-graphIncome();
+// graphOdds();
+// graphGdp();
+// graphPopulation();
+// graphIncome();
