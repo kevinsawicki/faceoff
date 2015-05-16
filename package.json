@@ -1,0 +1,14 @@
+{
+  "name": "faceoff",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kevinsawicki/faceoof"
+  },
+  "scripts": {
+    "start": "serve"
+  },
+  "devDependencies": {
+    "serve": "^1.4.0"
+  }
+}
