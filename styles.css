@@ -7,6 +7,10 @@
   border-color: rgb(61,  72,  90);
 }
 
+.navbar-dot {
+  color: #69F0AE;
+}
+
 .footer {
   border-top: 1px solid;
   color: #fff;
