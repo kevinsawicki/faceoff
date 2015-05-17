@@ -500,6 +500,7 @@ var graphTopFinishes = function() {
   var x = d3.scale.ordinal().rangeRoundBands([0, width], .1);
   var y = d3.scale.linear().range([height, 0]);
   var max = data.length + 1;
+  var textXStart = 16;
 
   var xAxis = d3.svg.axis().scale(x).orient("bottom").tickFormat(function(country) {
     var flag = country.toLowerCase().replace(/ /g, '-');
@@ -563,7 +564,7 @@ var graphTopFinishes = function() {
         .data(years[i].bestYear.length > 0 ? years[i].bestYear : [years[i].bestYear])
       .enter().append("text")
         .attr("class", "years")
-        .attr("x", function(d) { return x(years[i].country) + 12; })
+        .attr("x", function(d) { return x(years[i].country) + textXStart; })
         .attr("y", function(d, k) { return y(1) - (16 * (k + 1)); })
         .attr("dy", ".71em")
         .text(function(bestYear) { return bestYear; });
@@ -607,6 +608,7 @@ var graphTopFinishes = function() {
 var graphTopFourFinishes = function() {
   var x = d3.scale.ordinal().rangeRoundBands([0, width], .1);
   var y = d3.scale.linear().range([height, 0]);
+  var textXStart = 16;
 
   var xAxis = d3.svg.axis().scale(x).orient("bottom").tickFormat(function(country) {
     var flag = country.toLowerCase().replace(/ /g, '-');
@@ -756,7 +758,7 @@ var graphTopFourFinishes = function() {
           .data(d.firsts)
         .enter().append("text")
           .attr("class", "years")
-          .attr("x", function() { return x(d.country) + 12; })
+          .attr("x", function() { return x(d.country) + textXStart; })
           .attr("y", function(_d, k) {
             var seconds  = d.seconds ? d.seconds.length : 0;
             var thirds   = d.thirds  ? d.thirds.length : 0;
@@ -772,7 +774,7 @@ var graphTopFourFinishes = function() {
           .data(d.seconds)
         .enter().append("text")
           .attr("class", "years")
-          .attr("x", function() { return x(d.country) + 12; })
+          .attr("x", function() { return x(d.country) + textXStart; })
           .attr("y", function(_d, k) {
             var thirds   = d.thirds  ? d.thirds.length : 0;
             var fourths  = d.fourths ? d.fourths.length : 0;
@@ -787,7 +789,7 @@ var graphTopFourFinishes = function() {
           .data(d.thirds)
         .enter().append("text")
           .attr("class", "years")
-          .attr("x", function() { return x(d.country) + 12; })
+          .attr("x", function() { return x(d.country) + textXStart; })
           .attr("y", function(_d, k) {
             var fourths  = d.fourths ? d.fourths.length : 0;
             return y(fourths) - (16 * (k + 1));
@@ -801,7 +803,7 @@ var graphTopFourFinishes = function() {
           .data(d.fourths)
         .enter().append("text")
           .attr("class", "years")
-          .attr("x", function() { return x(d.country) + 12; })
+          .attr("x", function() { return x(d.country) + textXStart; })
           .attr("y", function(_d, k) {
             return y(0) - (16 * (k + 1));
           })
