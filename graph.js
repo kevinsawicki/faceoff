@@ -9,7 +9,7 @@ var data = [
     "wins": 3,
     "losses": 10,
     "draws": 4,
-    "best": 5,
+    "best": 8,
     "bestYear": 2004,
     "odds": 0,
     "fullOdds": "",
@@ -88,7 +88,7 @@ var data = [
     "wins": 0,
     "losses": 2,
     "draws": 1,
-    "best": 14,
+    "best": 16,
     "bestYear": 2011,
     "odds": 0,
     "fullOdds": "",
@@ -131,7 +131,7 @@ var data = [
     "wins": 5,
     "losses": 3,
     "draws": 4,
-    "best": 6,
+    "best": 8,
     "bestYear": 1995,
     "odds": 0,
     "fullOdds": "",
@@ -211,7 +211,7 @@ var data = [
     "wins": 0,
     "losses": 4,
     "draws": 2,
-    "best": 11,
+    "best": 16,
     "bestYear": 2011,
     "odds": 0,
     "fullOdds": "",
@@ -240,7 +240,7 @@ var data = [
     "wins": 0,
     "losses": 8,
     "draws": 1,
-    "best": 12,
+    "best": 16,
     "bestYear": 2011,
     "odds": 0,
     "fullOdds": "",
@@ -255,7 +255,7 @@ var data = [
     "wins": 3,
     "losses": 14,
     "draws": 2,
-    "best": 7,
+    "best": 8,
     "bestYear": 1999,
     "odds": 0,
     "fullOdds": "",
@@ -289,7 +289,7 @@ var data = [
     "wins": 0,
     "losses": 3,
     "draws": 0,
-    "best": 14,
+    "best": 16,
     "bestYear": 2003,
     "odds": 0,
     "fullOdds": "",
@@ -496,6 +496,7 @@ var graphRecords = function() {
 var graphTopFinishes = function() {
   var x = d3.scale.ordinal().rangeRoundBands([0, width], .1);
   var y = d3.scale.linear().range([height, 0]);
+  var max = data.length + 1;
 
   var xAxis = d3.svg.axis().scale(x).orient("bottom").tickFormat(function(country) {
     var flag = country.toLowerCase().replace(/ /g, '-');
@@ -545,8 +546,8 @@ var graphTopFinishes = function() {
       .attr("class", function(d) { return "bar best-" + d.best; })
       .attr("x", function(d) { return x(d.country); })
       .attr("width", x.rangeBand())
-      .attr("y", function(d) { return y(33 - d.best); })
-      .attr("height", function(d) { return Math.max(0, height - y(33 - d.best)); })
+      .attr("y", function(d) { return y(max - d.best); })
+      .attr("height", function(d) { return Math.max(0, height - y(max - d.best)); })
       .attr("data-toggle", "tooltip")
       .attr("data-placement", "top")
       .attr("title", function(d) { return d.country; });
@@ -563,7 +564,7 @@ var graphTopFinishes = function() {
         .text(function(bestYear) { return bestYear; });
 
   var legend = svg.selectAll(".legend")
-      .data(["1st", "2nd", "3rd", "4th", "Quarterfinals", "Round of 16", "Group Stage"])
+      .data(["1st", "2nd", "3rd", "4th", "Quarterfinals", "Group Stage"])
     .enter().append("g")
       .attr("class", "legend")
       .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
