@@ -420,7 +420,10 @@ var graphRecords = function() {
         return a.wins - b.wins;
       else if (a.draws > b.draws)
         return a.draws - b.draws;
-      return b.losses - a.losses;
+      else if (b.losses !== a.losses)
+        return b.losses - a.losses;
+      else
+        return a.country.localeCompare(b.country);
     }
     return totalA - totalB;
   });
@@ -526,8 +529,10 @@ var graphTopFinishes = function() {
     if (a.best === b.best)
       if (a.best === 1 && b.best === 1 && a.champions !== b.champions)
         return a.champions - b.champions;
-      else
+      else if (a.wins !== b.wins)
         return a.wins - b.wins;
+      else
+        return a.country.localeCompare(b.country);
     else
       return b.best - a.best;
   });
