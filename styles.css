@@ -99,6 +99,16 @@ html, body {
   color: #fff;
 }
 
+.wc-1-2015 {
+  background: rgba(255, 0, 0, .85);
+  color: #fff;
+}
+
+.wc-2-2015 {
+  background: rgba(255, 255, 255, .7);
+  color: #333;
+}
+
 .legend, .tick text {
   font-family: 'Arimo', sans-serif;
   fill: #222;
