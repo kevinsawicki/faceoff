@@ -88,6 +88,10 @@ html, body {
   padding: 2px 10px 2px 10px;
 }
 
+#wc-2015 .tile {
+  border-color: #f0f0f0;
+}
+
 .wc-1 {
   background: rgba(0, 155, 58, .85);
   color: #fff;
