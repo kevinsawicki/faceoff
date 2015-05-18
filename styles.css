@@ -39,7 +39,10 @@
   color: #fff;
 }
 
-.navbar-nav > li > a:hover {
+.navbar-nav > li > a:hover,
+.nav .open > a,
+.nav .open > a:hover,
+.nav .open > a:focus {
   background: rgb(61,  72,  90);
   color: #fff;
 }
