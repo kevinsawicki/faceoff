@@ -16,6 +16,8 @@ var data = [
     "population": 0,
     "gdp": 0,
     "income": 0,
+    "odds": 2.44,
+    "fullOdds": "40 to 1",
     "class": "australia"
   },
   {
@@ -33,6 +35,8 @@ var data = [
     "population": 0,
     "gdp": 0,
     "income": 0,
+    "odds": 13.33,
+    "fullOdds": "13 to 2",
     "class": "brazil"
   },
   {
@@ -47,6 +51,8 @@ var data = [
     "population": 0,
     "gdp": 0,
     "income": 0,
+    "odds": 0.4,
+    "fullOdds": "250 to 1",
     "class": "cameroon"
   },
   {
@@ -63,6 +69,8 @@ var data = [
     "population": 0,
     "gdp": 0,
     "income": 0,
+    "odds": 7.69,
+    "fullOdds": "12 to 1",
     "class": "canada"
   },
   {
@@ -80,6 +88,8 @@ var data = [
     "population": 0,
     "gdp": 0,
     "income": 0,
+    "odds": 1.49,
+    "fullOdds": "66 to 1",
     "class": "china"
   },
   {
@@ -95,6 +105,8 @@ var data = [
     "population": 0,
     "gdp": 0,
     "income": 0,
+    "odds": 0.66,
+    "fullOdds": "150 to 1",
     "class": "colombia"
   },
   {
@@ -109,6 +121,8 @@ var data = [
     "population": 0,
     "gdp": 0,
     "income": 0,
+    "odds": 0.25,
+    "fullOdds": "400 to 1",
     "class": "costa-rica"
   },
   {
@@ -123,6 +137,8 @@ var data = [
     "population": 0,
     "gdp": 0,
     "income": 0,
+    "odds": 0.4,
+    "fullOdds": "250 to 1",
     "class": "ecuador"
   },
   {
@@ -138,6 +154,8 @@ var data = [
     "population": 0,
     "gdp": 0,
     "income": 0,
+    "odds": 4.76,
+    "fullOdds": "20 to 1",
     "class": "england"
   },
   {
@@ -154,6 +172,8 @@ var data = [
     "population": 0,
     "gdp": 0,
     "income": 0,
+    "odds": 11.11,
+    "fullOdds": "8 to 1",
     "class": "france"
   },
   {
@@ -172,6 +192,8 @@ var data = [
     "population": 0,
     "gdp": 0,
     "income": 0,
+    "odds": 25,
+    "fullOdds": "3 to 1",
     "class": "germany"
   },
   {
@@ -186,6 +208,8 @@ var data = [
     "population": 0,
     "gdp": 0,
     "income": 0,
+    "odds": 0.4,
+    "fullOdds": "250 to 1",
     "class": "ivory-coast"
   },
   {
@@ -203,6 +227,8 @@ var data = [
     "population": 0,
     "gdp": 0,
     "income": 0,
+    "odds": 11.11,
+    "fullOdds": "8 to 1",
     "class": "japan"
   },
   {
@@ -218,6 +244,8 @@ var data = [
     "population": 0,
     "gdp": 0,
     "income": 0,
+    "odds": 0.5,
+    "fullOdds": "200 to 1",
     "class": "mexico"
   },
   {
@@ -232,6 +260,8 @@ var data = [
     "population": 0,
     "gdp": 0,
     "income": 0,
+    "odds": 1.49,
+    "fullOdds": "66 to 1",
     "class": "netherlands"
   },
   {
@@ -247,6 +277,8 @@ var data = [
     "population": 0,
     "gdp": 0,
     "income": 0,
+    "odds": 0.66,
+    "fullOdds": "150 to 1",
     "class": "new-zealand"
   },
   {
@@ -262,6 +294,8 @@ var data = [
     "population": 0,
     "gdp": 0,
     "income": 0,
+    "odds": 0.5,
+    "fullOdds": "200 to 1",
     "class": "nigeria"
   },
   {
@@ -281,6 +315,8 @@ var data = [
     "population": 0,
     "gdp": 0,
     "income": 0,
+    "odds": 3.85,
+    "fullOdds": "25 to 1",
     "class": "norway"
   },
   {
@@ -296,6 +332,8 @@ var data = [
     "population": 0,
     "gdp": 0,
     "income": 0,
+    "odds": 1.49,
+    "fullOdds": "66 to 1",
     "class": "south-korea"
   },
   {
@@ -310,6 +348,8 @@ var data = [
     "population": 0,
     "gdp": 0,
     "income": 0,
+    "odds": 1.96,
+    "fullOdds": "50 to 1",
     "class": "spain"
   },
   {
@@ -327,6 +367,8 @@ var data = [
     "population": 0,
     "gdp": 0,
     "income": 0,
+    "odds": 9.09,
+    "fullOdds": "10 to 1",
     "class": "sweden"
   },
   {
@@ -341,6 +383,8 @@ var data = [
     "population": 0,
     "gdp": 0,
     "income": 0,
+    "odds": 1.23,
+    "fullOdds": "80 to 1",
     "class": "switzerland"
   },
   {
@@ -355,6 +399,8 @@ var data = [
     "population": 0,
     "gdp": 0,
     "income": 0,
+    "odds": 0.2,
+    "fullOdds": "500 to 1",
     "class": "thailand"
   },
   {
@@ -374,6 +420,8 @@ var data = [
     "population": 0,
     "gdp": 0,
     "income": 0,
+    "odds": 25,
+    "fullOdds": "3 to 1",
     "class": "united-states"
   }
 ];
@@ -393,7 +441,7 @@ var graphRecords = function() {
       .attr("x", x(country))
       .attr("y", height + 5)
       .attr("width", x.rangeBand())
-      .attr("height", 22)
+      .attr("height", 20)
       .attr("xlink:href", "./assets/flags/" + flag + ".png")
       .attr("preserveAspectRatio", "none")
       .attr("class", "flag")
@@ -508,7 +556,7 @@ var graphTopFinishes = function() {
       .attr("x", x(country))
       .attr("y", height + 5)
       .attr("width", x.rangeBand())
-      .attr("height", 22)
+      .attr("height", 20)
       .attr("xlink:href", "./assets/flags/" + flag + ".png")
       .attr("preserveAspectRatio", "none")
       .attr('class', 'flag')
@@ -617,7 +665,7 @@ var graphTopFourFinishes = function() {
       .attr("x", x(country))
       .attr("y", height + 5)
       .attr("width", x.rangeBand())
-      .attr("height", 22)
+      .attr("height", 20)
       .attr("xlink:href", "./assets/flags/" + flag + ".png")
       .attr("preserveAspectRatio", "none")
       .attr("class", "flag")
@@ -852,7 +900,7 @@ var graphOdds = function() {
       .attr("x", x(country))
       .attr("y", height + 5)
       .attr("width", x.rangeBand())
-      .attr("height", 18)
+      .attr("height", 20)
       .attr("xlink:href", "./assets/flags/" + flag + ".png")
       .attr("preserveAspectRatio", "none")
       .attr('class', 'flag')
@@ -866,7 +914,7 @@ var graphOdds = function() {
     return odds + "%";
   });
 
-  var svg = d3.select("svg.odds")
+  var svg = d3.select("#odds-2015 svg.odds")
       .attr("width", width + margin.left + margin.right)
       .attr("height", height + margin.top + margin.bottom)
     .append("g")
@@ -1250,7 +1298,7 @@ var graphIncome = function() {
 graphRecords();
 graphTopFinishes();
 graphTopFourFinishes();
-// graphOdds();
+graphOdds();
 // graphGdp();
 // graphPopulation();
 // graphIncome();
