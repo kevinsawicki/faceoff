@@ -40,6 +40,7 @@
 }
 
 .navbar-nav > li > a:hover,
+.navbar-nav > li > a:focus,
 .nav .open > a,
 .nav .open > a:hover,
 .nav .open > a:focus {
