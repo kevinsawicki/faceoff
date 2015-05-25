@@ -697,6 +697,16 @@ var graphTopFourFinishes = function() {
 
     var totalA = firstA + secondA + thirdA + fourthA;
     var totalB = firstB + secondB + thirdB + fourthB;
+
+    var matchesA = a.wins + a.draws + a.losses;
+    var matchesB = b.wins + b.draws + b.losses;
+
+    if (matchesA === 0 && matchesB > 0)
+      return -1;
+
+    if (matchesB === 0 && matchesA > 0)
+      return 1;
+
     if (totalA === totalB) {
       if (firstA !== firstB)
         return firstA - firstB;
@@ -710,7 +720,10 @@ var graphTopFourFinishes = function() {
         return a.wins - b.wins;
       else if (a.draws !== b.draws)
         return a.draws - b.draws;
-      return b.losses - a.losses;
+      else if (b.losses !== a.losses)
+        return b.losses - a.losses;
+      else
+        return a.country.localeCompare(b.country);
     }
     return totalA - totalB;
   });
@@ -921,7 +934,10 @@ var graphOdds = function() {
       .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
   var odds = data.slice().sort(function(a, b) {
-    return a.odds - b.odds;
+    if (a.odds !== b.odds)
+      return a.odds - b.odds;
+    else
+      return a.country.localeCompare(b.country);
   });
 
   x.domain(odds.map(function(d) { return d.country; }));
