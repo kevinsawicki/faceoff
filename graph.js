@@ -730,10 +730,10 @@ var graphTopFourFinishes = function() {
 
   x.domain(finishes.map(function(d) { return d.country; }));
   y.domain([0, d3.max(finishes, function(d) {
-    var firsts  = d.firsts   ? d.firsts.length : 0;
-    var seconds = d.seconds  ? d.seconds.length : 0;
-    var thirds  = d.thirds   ? d.thirds.length : 0;
-    var fourths = d.fourths  ? d.fourths.length : 0;
+    var firsts  = d.firsts  ? d.firsts.length  : 0;
+    var seconds = d.seconds ? d.seconds.length : 0;
+    var thirds  = d.thirds  ? d.thirds.length  : 0;
+    var fourths = d.fourths ? d.fourths.length : 0;
     return firsts + seconds + thirds + fourths;
   })]);
 
@@ -754,10 +754,10 @@ var graphTopFourFinishes = function() {
       .attr("x", function(d) { return x(d.country); })
       .attr("width", x.rangeBand())
       .attr("y", function(d) {
-        var firsts   = d.firsts  ? d.firsts.length : 0;
-        var seconds  = d.seconds ? d.seconds.length : 0;
-        var thirds   = d.thirds  ? d.thirds.length : 0;
-        var fourths  = d.fourths ? d.fourths.length : 0;
+        var firsts  = d.firsts  ? d.firsts.length  : 0;
+        var seconds = d.seconds ? d.seconds.length : 0;
+        var thirds  = d.thirds  ? d.thirds.length  : 0;
+        var fourths = d.fourths ? d.fourths.length : 0;
         return y(firsts + seconds + thirds + fourths);
       })
       .attr("height", function(d) { return height - y(d.firsts ? d.firsts.length : 0); })
@@ -772,9 +772,9 @@ var graphTopFourFinishes = function() {
       .attr("x", function(d) { return x(d.country); })
       .attr("width", x.rangeBand())
       .attr("y", function(d) {
-        var seconds  = d.seconds ? d.seconds.length : 0;
-        var thirds   = d.thirds  ? d.thirds.length : 0;
-        var fourths  = d.fourths ? d.fourths.length : 0;
+        var seconds = d.seconds ? d.seconds.length : 0;
+        var thirds  = d.thirds  ? d.thirds.length  : 0;
+        var fourths = d.fourths ? d.fourths.length : 0;
         return y(seconds + thirds + fourths);
       })
       .attr("height", function(d) { return height - y(d.seconds ? d.seconds.length : 0); })
@@ -790,8 +790,8 @@ var graphTopFourFinishes = function() {
       .attr("width", x.rangeBand())
       .attr("y", function(d) { return y(d.losses); })
       .attr("y", function(d) {
-        var thirds   = d.thirds ? d.thirds.length : 0;
-        var fourths  = d.fourths ? d.fourths.length : 0;
+        var thirds  = d.thirds  ? d.thirds.length  : 0;
+        var fourths = d.fourths ? d.fourths.length : 0;
         return y(thirds + fourths);
       })
       .attr("height", function(d) { return height - y(d.thirds ? d.thirds.length : 0); })
@@ -821,9 +821,9 @@ var graphTopFourFinishes = function() {
           .attr("class", "years")
           .attr("x", function() { return x(d.country) + textXStart; })
           .attr("y", function(_d, k) {
-            var seconds  = d.seconds ? d.seconds.length : 0;
-            var thirds   = d.thirds  ? d.thirds.length : 0;
-            var fourths  = d.fourths ? d.fourths.length : 0;
+            var seconds = d.seconds ? d.seconds.length : 0;
+            var thirds  = d.thirds  ? d.thirds.length  : 0;
+            var fourths = d.fourths ? d.fourths.length : 0;
             return y(seconds + thirds + fourths) - (16 * (k + 1));
           })
           .attr("dy", ".71em")
@@ -837,8 +837,8 @@ var graphTopFourFinishes = function() {
           .attr("class", "years")
           .attr("x", function() { return x(d.country) + textXStart; })
           .attr("y", function(_d, k) {
-            var thirds   = d.thirds  ? d.thirds.length : 0;
-            var fourths  = d.fourths ? d.fourths.length : 0;
+            var thirds  = d.thirds  ? d.thirds.length  : 0;
+            var fourths = d.fourths ? d.fourths.length : 0;
             return y(thirds + fourths) - (16 * (k + 1));
           })
           .attr("dy", ".71em")
@@ -852,7 +852,7 @@ var graphTopFourFinishes = function() {
           .attr("class", "years")
           .attr("x", function() { return x(d.country) + textXStart; })
           .attr("y", function(_d, k) {
-            var fourths  = d.fourths ? d.fourths.length : 0;
+            var fourths = d.fourths ? d.fourths.length : 0;
             return y(fourths) - (16 * (k + 1));
           })
           .attr("dy", ".71em")
