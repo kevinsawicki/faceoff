@@ -152,8 +152,8 @@ var data = [
     "population": 66139000,
     "gdp": 2806000000000,
     "income": 43520,
-    "odds": 11.11,
-    "fullOdds": "8 to 1",
+    "odds": 12.5,
+    "fullOdds": "7 to 1",
     "class": "france"
   },
   {
