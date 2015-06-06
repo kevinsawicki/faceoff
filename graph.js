@@ -1080,7 +1080,9 @@ var graphPopulation = function() {
     return '';
   });
 
-  var yAxis = d3.svg.axis().scale(y).orient("right").ticks(10, "s");
+  var yAxis = d3.svg.axis().scale(y).orient("right").ticks(10).tickFormat(function(d) {
+    return d3.format('s')(d).replace('G', 'B');
+  });
 
   var svg = d3.select("svg.population")
       .attr("width", width + margin.left + margin.right)
