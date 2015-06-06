@@ -18,3 +18,14 @@ The raw data used for the graphs is available in the following JSON files:
 
 * [2015 data](https://raw.githubusercontent.com/kevinsawicki/faceoff/gh-pages/data/2015.json)
 * [2014 data](https://raw.githubusercontent.com/kevinsawicki/faceoff/gh-pages/data/2014.json)
+
+## Running Locally
+
+```sh
+git clone https://github.com/kevinsawicki/faceoff.git
+cd faceoff
+npm install
+npm start
+```
+
+Then open http://localhost:3000 in a browser.
