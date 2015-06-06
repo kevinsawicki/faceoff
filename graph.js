@@ -628,7 +628,7 @@ var graphTopFourFinishes = function() {
     return '';
   });
 
-  var yAxis = d3.svg.axis().scale(y).orient("right").ticks(10, "s");
+  var yAxis = d3.svg.axis().scale(y).orient("right").ticks(5, "d");
 
   var svg = d3.select("#top-4-2015 svg.top-4")
       .attr("width", width + margin.left + margin.right)
