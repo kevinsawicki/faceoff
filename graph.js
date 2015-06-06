@@ -2,6 +2,8 @@ var margin = {top: 20, right: 40, bottom: 30, left: 0};
 var width = 950 - margin.left - margin.right;
 var height = 480 - margin.top - margin.bottom;
 
+
+
 var data = [
   {
     "country": "Australia",
@@ -12,7 +14,7 @@ var data = [
     "best": 8,
     "bestYear": 2004,
     "population": 23861800,
-    "gdp": 0,
+    "gdp": 1560000000000,
     "income": 0,
     "odds": 2.44,
     "fullOdds": "40 to 1",
@@ -29,7 +31,7 @@ var data = [
     "seconds": [2007],
     "thirds": [1999],
     "population": 204388000,
-    "gdp": 0,
+    "gdp": 2246000000000,
     "income": 0,
     "odds": 13.33,
     "fullOdds": "13 to 2",
@@ -43,7 +45,7 @@ var data = [
     "draws": 0,
     "best": 25,
     "population": 21143237,
-    "gdp": 0,
+    "gdp": 29570000000,
     "income": 0,
     "odds": 0.4,
     "fullOdds": "250 to 1",
@@ -59,7 +61,7 @@ var data = [
     "bestYear": 2003,
     "fourths": [2003],
     "population": 35702707,
-    "gdp": 0,
+    "gdp": 1827000000000,
     "income": 0,
     "odds": 7.69,
     "fullOdds": "12 to 1",
@@ -76,7 +78,7 @@ var data = [
     "seconds": [1999],
     "fourths": [1995],
     "population": 1370130000,
-    "gdp": 0,
+    "gdp": 9240000000000,
     "income": 0,
     "odds": 1.49,
     "fullOdds": "66 to 1",
@@ -91,7 +93,7 @@ var data = [
     "best": 16,
     "bestYear": 2011,
     "population": 48150400,
-    "gdp": 0,
+    "gdp": 378400000000,
     "income": 0,
     "odds": 0.66,
     "fullOdds": "150 to 1",
@@ -105,7 +107,7 @@ var data = [
     "draws": 0,
     "best": 25,
     "population": 4773130,
-    "gdp": 0,
+    "gdp": 49620000000,
     "income": 0,
     "odds": 0.25,
     "fullOdds": "400 to 1",
@@ -119,7 +121,7 @@ var data = [
     "draws": 0,
     "best": 25,
     "population": 15476000,
-    "gdp": 0,
+    "gdp": 94470000000,
     "income": 0,
     "odds": 0.4,
     "fullOdds": "250 to 1",
@@ -134,7 +136,7 @@ var data = [
     "best": 8,
     "bestYear": 1995,
     "population": 64800000,
-    "gdp": 0,
+    "gdp": 2678000000000,
     "income": 0,
     "odds": 4.76,
     "fullOdds": "20 to 1",
@@ -168,7 +170,7 @@ var data = [
     "firsts": [2007, 2003],
     "seconds": [1995],
     "population": 81083600,
-    "gdp": 0,
+    "gdp": 3730000000000,
     "income": 0,
     "odds": 25,
     "fullOdds": "3 to 1",
@@ -182,7 +184,7 @@ var data = [
     "draws": 0,
     "best": 25,
     "population": 22671331,
-    "gdp": 0,
+    "gdp": 31060000000,
     "income": 0,
     "odds": 0.4,
     "fullOdds": "250 to 1",
@@ -199,7 +201,7 @@ var data = [
     "champions": 1,
     "firsts": [2011],
     "population": 126880000,
-    "gdp": 0,
+    "gdp": 4920000000000,
     "income": 0,
     "odds": 11.11,
     "fullOdds": "8 to 1",
@@ -214,7 +216,7 @@ var data = [
     "best": 16,
     "bestYear": 2011,
     "population": 121005815,
-    "gdp": 0,
+    "gdp": 1261000000000,
     "income": 0,
     "odds": 0.5,
     "fullOdds": "200 to 1",
@@ -228,7 +230,7 @@ var data = [
     "draws": 0,
     "best": 25,
     "population": 16904700,
-    "gdp": 0,
+    "gdp": 853500000000,
     "income": 0,
     "odds": 1.49,
     "fullOdds": "66 to 1",
@@ -243,7 +245,7 @@ var data = [
     "best": 16,
     "bestYear": 2011,
     "population": 4585670,
-    "gdp": 0,
+    "gdp": 185800000000,
     "income": 0,
     "odds": 0.66,
     "fullOdds": "150 to 1",
@@ -258,7 +260,7 @@ var data = [
     "best": 8,
     "bestYear": 1999,
     "population": 183523000,
-    "gdp": 0,
+    "gdp": 521800000000,
     "income": 0,
     "odds": 0.5,
     "fullOdds": "200 to 1",
@@ -277,7 +279,7 @@ var data = [
     "seconds": [1991],
     "fourths": [2007, 1999],
     "population": 5176998,
-    "gdp": 0,
+    "gdp": 512600000000,
     "income": 0,
     "odds": 3.85,
     "fullOdds": "25 to 1",
@@ -292,7 +294,7 @@ var data = [
     "best": 16,
     "bestYear": 2003,
     "population": 51342881,
-    "gdp": 0,
+    "gdp": 1305000000000,
     "income": 0,
     "odds": 1.49,
     "fullOdds": "66 to 1",
@@ -306,7 +308,7 @@ var data = [
     "draws": 0,
     "best": 25,
     "population": 46464053,
-    "gdp": 0,
+    "gdp": 1393000000000,
     "income": 0,
     "odds": 1.96,
     "fullOdds": "50 to 1",
@@ -323,7 +325,7 @@ var data = [
     "seconds": [2003],
     "thirds": [2011, 1991],
     "population": 9767357,
-    "gdp": 0,
+    "gdp": 579700000000,
     "income": 0,
     "odds": 9.09,
     "fullOdds": "10 to 1",
@@ -337,7 +339,7 @@ var data = [
     "draws": 0,
     "best": 25,
     "population": 8236600,
-    "gdp": 0,
+    "gdp": 685400000000,
     "income": 0,
     "odds": 1.23,
     "fullOdds": "80 to 1",
@@ -351,7 +353,7 @@ var data = [
     "draws": 0,
     "best": 25,
     "population": 65104000,
-    "gdp": 0,
+    "gdp": 387300000000,
     "income": 0,
     "odds": 0.2,
     "fullOdds": "500 to 1",
@@ -370,7 +372,7 @@ var data = [
     "seconds": [2011],
     "thirds": [2007, 2003, 1995],
     "population": 321107000,
-    "gdp": 0,
+    "gdp": 16770000000000,
     "income": 0,
     "odds": 25,
     "fullOdds": "3 to 1",
@@ -978,7 +980,7 @@ var graphGdp = function() {
 
   var yAxis = d3.svg.axis().scale(y).orient("right").ticks(10, "$s");
 
-  var svg = d3.select("svg.gdp")
+  var svg = d3.select("#gdp-2015 svg.gdp")
       .attr("width", width + margin.left + margin.right)
       .attr("height", height + margin.top + margin.bottom)
     .append("g")
@@ -1269,6 +1271,6 @@ graphRecords();
 graphTopFinishes();
 graphTopFourFinishes();
 graphOdds();
-// graphGdp();
+graphGdp();
 graphPopulation();
 // graphIncome();
