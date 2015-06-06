@@ -5,6 +5,7 @@
     "type": "git",
     "url": "https://github.com/kevinsawicki/faceoff"
   },
+  "homepage": "http://faceoff.io",
   "scripts": {
     "start": "serve"
   },
