@@ -4,522 +4,376 @@ var height = 480 - margin.top - margin.bottom;
 
 var data = [
   {
-    "country": "Algeria",
-    "continent": "Africa",
-    "wins": 2,
-    "losses": 5,
-    "draws": 2,
-    "best": 24,
-    "odds": 0.07,
-    "fullOdds": "1500 to 1",
-    "bestYear": 1982,
-    "population": 38480000,
-    "gdp": 205800000000,
-    "income": 5020,
-    "class": "algeria"
-  },
-  {
-    "country": "Argentina",
-    "continent": "South America",
-    "wins": 37,
-    "losses": 20,
-    "draws": 13,
-    "best": 1,
-    "firsts": [1986, 1978],
-    "seconds": [1990, 1930],
-    "odds": 20,
-    "fullOdds": "4 to 1",
-    "champions": 2,
-    "bestYear": [1986, 1978],
-    "population": 41090000,
-    "gdp": 475500000000,
-    "income": 5170,
-    "class": "argentina"
-  },
-  {
     "country": "Australia",
-    "wins": 2,
-    "losses": 5,
-    "draws": 3,
-    "best": 16,
-    "odds": 0.04,
-    "fullOdds": "2500 to 1",
-    "bestYear": 2006,
-    "population": 22720000,
-    "gdp": 1532000000000,
-    "income": 59260,
+    "continent": "Australia",
+    "wins": 3,
+    "losses": 10,
+    "draws": 4,
+    "best": 8,
+    "bestYear": 2004,
+    "population": 23861800,
+    "gdp": 1560000000000,
+    "income": 65400,
+    "odds": 2.44,
+    "fullOdds": "40 to 1",
     "class": "australia"
-  },
-  {
-    "country": "Belgium",
-    "continent": "Europe",
-    "wins": 10,
-    "losses": 17,
-    "draws": 9,
-    "fourths": [1986],
-    "best": 4,
-    "odds": 4.76,
-    "fullOdds": "20 to 1",
-    "bestYear": 1986,
-    "population": 11130000,
-    "gdp": 483000000000,
-    "income": 44820,
-    "class": "belgium"
-  },
-  {
-    "country": "Bosnia and Herzegovina",
-    "continent": "Europe",
-    "wins": 0,
-    "losses": 0,
-    "draws": 0,
-    "best": 33,
-    "odds": 0.66,
-    "fullOdds": "150 to 1",
-    "population": 3834000,
-    "gdp": 17470000000,
-    "income": 4750,
-    "class": "bosnia-and-herzegovina"
   },
   {
     "country": "Brazil",
     "continent": "South America",
-    "wins": 67,
-    "losses": 15,
-    "draws": 15,
-    "firsts": [2002, 1994, 1970, 1962, 1958],
-    "seconds": [1998, 1950],
-    "thirds": [1978, 1938],
-    "fourths": [1974],
-    "best": 1,
-    "odds": 26.67,
-    "fullOdds": "11 to 4",
-    "champions": 5,
-    "bestYear": [2002, 1994, 1970, 1962, 1958],
-    "population": 198700000,
-    "gdp": 2253000000000,
-    "income": 11630,
+    "wins": 15,
+    "losses": 7,
+    "draws": 4,
+    "best": 2,
+    "bestYear": 2007,
+    "seconds": [2007],
+    "thirds": [1999],
+    "population": 204388000,
+    "gdp": 2246000000000,
+    "income": 11690,
+    "odds": 13.33,
+    "fullOdds": "13 to 2",
     "class": "brazil"
   },
   {
     "country": "Cameroon",
     "continent": "Africa",
-    "wins": 4,
-    "losses": 9,
-    "draws": 7,
-    "best": 8,
-    "odds": 0.13,
-    "fullOdds": "750 to 1",
-    "bestYear": 1990,
-    "population": 21700000,
-    "gdp": 25320000000,
-    "income": 1170,
+    "wins": 0,
+    "losses": 0,
+    "draws": 0,
+    "best": 25,
+    "population": 21143237,
+    "gdp": 29570000000,
+    "income": 1290,
+    "odds": 0.4,
+    "fullOdds": "250 to 1",
     "class": "cameroon"
   },
   {
-    "country": "Chile",
-    "continent": "South America",
-    "wins": 9,
-    "losses": 14,
-    "draws": 6,
-    "thirds": [1962],
-    "best": 3,
-    "odds": 1.96,
-    "fullOdds": "50 to 1",
-    "bestYear": 1962,
-    "population": 17460000,
-    "gdp": 269900000000,
-    "income": 14310,
-    "class": "chile"
+    "country": "Canada",
+    "continent": "North America",
+    "wins": 4,
+    "losses": 11,
+    "draws": 3,
+    "best": 4,
+    "bestYear": 2003,
+    "fourths": [2003],
+    "population": 35702707,
+    "gdp": 1827000000000,
+    "income": 52210,
+    "odds": 7.69,
+    "fullOdds": "12 to 1",
+    "class": "canada"
+  },
+  {
+    "country": "China",
+    "continent": "Asia",
+    "wins": 13,
+    "losses": 6,
+    "draws": 5,
+    "best": 2,
+    "bestYear": 1999,
+    "seconds": [1999],
+    "fourths": [1995],
+    "population": 1370130000,
+    "gdp": 9240000000000,
+    "income": 6560,
+    "odds": 1.49,
+    "fullOdds": "66 to 1",
+    "class": "china"
   },
   {
     "country": "Colombia",
     "continent": "South America",
-    "wins": 3,
-    "losses": 8,
-    "draws": 2,
+    "wins": 0,
+    "losses": 2,
+    "draws": 1,
     "best": 16,
-    "odds": 2.44,
-    "fullOdds": "40 to 1",
-    "bestYear": 1990,
-    "population": 47700000,
-    "gdp": 369600000000,
-    "income": 7020,
+    "bestYear": 2011,
+    "population": 48150400,
+    "gdp": 378400000000,
+    "income": 7590,
+    "odds": 0.66,
+    "fullOdds": "150 to 1",
     "class": "colombia"
   },
   {
     "country": "Costa Rica",
     "continent": "North America",
-    "wins": 3,
-    "losses": 6,
-    "draws": 1,
-    "best": 16,
-    "odds": 0.04,
-    "fullOdds": "2500 to 1",
-    "bestYear": 1990,
-    "population": 4805000,
-    "gdp": 45100000000,
-    "income": 8820,
+    "wins": 0,
+    "losses": 0,
+    "draws": 0,
+    "best": 25,
+    "population": 4773130,
+    "gdp": 49620000000,
+    "income": 9550,
+    "odds": 0.25,
+    "fullOdds": "400 to 1",
     "class": "costa-rica"
-  },
-  {
-    "country": "Croatia",
-    "continent": "Europe",
-    "wins": 6,
-    "losses": 5,
-    "draws": 2,
-    "thirds": [1998],
-    "best": 3,
-    "odds": 0.57,
-    "fullOdds": "175 to 1",
-    "bestYear": 1998,
-    "population": 4268000,
-    "gdp": 59320000000,
-    "income": 13490,
-    "class": "croatia"
   },
   {
     "country": "Ecuador",
     "continent": "South America",
-    "wins": 3,
-    "losses": 4,
+    "wins": 0,
+    "losses": 0,
     "draws": 0,
-    "best": 16,
-    "odds": 0.79,
-    "fullOdds": "125 to 1",
-    "bestYear": 2006,
-    "population": 15490000,
-    "gdp": 84040000000,
-    "income": 5170,
+    "best": 25,
+    "population": 15476000,
+    "gdp": 94470000000,
+    "income": 5760,
+    "odds": 0.4,
+    "fullOdds": "250 to 1",
     "class": "ecuador"
   },
   {
     "country": "England",
     "continent": "Europe",
-    "wins": 26,
-    "losses": 14,
-    "draws": 19,
-    "firsts": [1966],
-    "fourths": [1990],
-    "best": 1,
-    "odds": 3.85,
-    "fullOdds": "25 to 1",
-    "champions": 1,
-    "bestYear": 1966,
-    "population": 63610000,
-    "gdp": 2476000000000,
-    "income": 38500,
+    "wins": 5,
+    "losses": 3,
+    "draws": 4,
+    "best": 8,
+    "bestYear": 1995,
+    "population": 64800000,
+    "gdp": 2678000000000,
+    "income": 41680,
+    "odds": 4.76,
+    "fullOdds": "20 to 1",
     "class": "england"
   },
   {
     "country": "France",
     "continent": "Europe",
-    "wins": 25,
-    "losses": 18,
-    "draws": 11,
-    "firsts": [1998],
-    "seconds": [2006],
-    "thirds": [1986, 1958],
-    "fourths": [1982],
-    "best": 1,
-    "odds": 4.35,
-    "fullOdds": "22 to 1",
-    "champions": 1,
-    "bestYear": 1998,
-    "population": 65700000,
-    "gdp": 2611000000000,
-    "income": 41850,
+    "wins": 3,
+    "losses": 4,
+    "draws": 2,
+    "best": 4,
+    "bestYear": 2011,
+    "fourths": [2011],
+    "population": 66139000,
+    "gdp": 2806000000000,
+    "income": 43520,
+    "odds": 12.5,
+    "fullOdds": "7 to 1",
     "class": "france"
   },
   {
     "country": "Germany",
     "continent": "Europe",
-    "wins": 60,
-    "losses": 20,
-    "draws": 19,
-    "firsts": [1990, 1974, 1954],
-    "seconds": [2002, 1986, 1982, 1966],
-    "thirds": [2010, 2006, 1970, 1934],
-    "fourths": [1958],
-    "best": 1,
-    "odds": 14.29,
-    "fullOdds": "6 to 1",
-    "champions": 3,
-    "bestYear": [1990, 1974, 1954],
-    "population": 80430000,
-    "gdp": 3426000000000,
-    "income": 45170,
-    "class": "germany"
-  },
-  {
-    "country": "Ghana",
-    "continent": "Africa",
-    "wins": 4,
-    "losses": 3,
-    "draws": 2,
-    "best": 8,
-    "odds": 0.5,
-    "fullOdds": "200 to 1",
-    "bestYear": 2010,
-    "population": 25370000,
-    "gdp": 40710000000,
-    "income": 1550,
-    "class": "ghana"
-  },
-  {
-    "country": "Greece",
-    "continent": "Europe",
-    "wins": 1,
-    "losses": 5,
-    "draws": 0,
-    "best": 24,
-    "odds": 0.5,
-    "fullOdds": "200 to 1",
-    "bestYear": 2010,
-    "population": 11090000,
-    "gdp": 248900000000,
-    "income": 23710,
-    "class": "greece"
-  },
-  {
-    "country": "Honduras",
-    "continent": "North America",
-    "wins": 0,
-    "losses": 3,
-    "draws": 3,
-    "best": 24,
-    "odds": 0.07,
-    "fullOdds": "1500 to 1",
-    "bestYear": 1982,
-    "population": 7936000,
-    "gdp": 18430000000,
-    "income": 2120,
-    "class": "honduras"
-  },
-  {
-    "country": "Iran",
-    "continent": "Asia",
-    "wins": 1,
+    "wins": 23,
     "losses": 6,
-    "draws": 2,
-    "best": 24,
-    "odds": 0.04,
-    "fullOdds": "2500 to 1",
-    "bestYear": 1998,
-    "population": 76420000,
-    "gdp": 552400000000,
-    "income": 4330,
-    "class": "iran"
-  },
-  {
-    "country": "Italy",
-    "continent": "Europe",
-    "wins": 44,
-    "losses": 15,
-    "draws": 21,
-    "firsts": [2006, 1982, 1938, 1934],
-    "seconds": [1994, 1970],
-    "thirds": [1990],
-    "fourths": [1978],
+    "draws": 3,
     "best": 1,
-    "odds": 3.85,
-    "fullOdds": "25 to 1",
-    "champions": 4,
-    "bestYear": [2006, 1982,  1938, 1934],
-    "population": 59540000,
-    "gdp": 2013000000000,
-    "income": 34720,
-    "class": "italy"
+    "bestYear": [2007, 2003],
+    "champions": 2,
+    "firsts": [2007, 2003],
+    "seconds": [1995],
+    "population": 81083600,
+    "gdp": 3730000000000,
+    "income": 47250,
+    "odds": 25,
+    "fullOdds": "3 to 1",
+    "class": "germany"
   },
   {
     "country": "Ivory Coast",
     "continent": "Africa",
-    "wins": 2,
-    "draws": 1,
-    "losses": 3,
-    "best": 24,
-    "odds": 0.66,
-    "fullOdds": "150 to 1",
-    "bestYear": 2010,
-    "population": 19840000,
-    "gdp": 24680000000,
-    "income": 1220,
+    "wins": 0,
+    "losses": 0,
+    "draws": 0,
+    "best": 25,
+    "population": 22671331,
+    "gdp": 31060000000,
+    "income": 1450,
+    "odds": 0.4,
+    "fullOdds": "250 to 1",
     "class": "ivory-coast"
   },
   {
     "country": "Japan",
     "continent": "Asia",
-    "wins": 4,
-    "losses": 7,
+    "wins": 7,
+    "losses": 12,
     "draws": 3,
-    "best": 16,
-    "odds": 0.66,
-    "fullOdds": "150 to 1",
-    "bestYear": 2010,
-    "population": 127600000,
-    "gdp": 5961000000000,
-    "income": 47870,
+    "best": 1,
+    "bestYear": 2011,
+    "champions": 1,
+    "firsts": [2011],
+    "population": 126880000,
+    "gdp": 4920000000000,
+    "income": 46330,
+    "odds": 11.11,
+    "fullOdds": "8 to 1",
     "class": "japan"
   },
   {
     "country": "Mexico",
     "continent": "North America",
-    "wins": 12,
-    "losses": 24,
-    "draws": 13,
-    "best": 8,
+    "wins": 0,
+    "losses": 4,
+    "draws": 2,
+    "best": 16,
+    "bestYear": 2011,
+    "population": 121005815,
+    "gdp": 1261000000000,
+    "income": 9940,
     "odds": 0.5,
     "fullOdds": "200 to 1",
-    "bestYear": 1986,
-    "population": 120800000,
-    "gdp": 1178000000000,
-    "income": 9640,
     "class": "mexico"
   },
   {
     "country": "Netherlands",
     "continent": "Europe",
-    "wins": 22,
-    "losses": 11,
-    "draws": 10,
-    "seconds": [2010, 1978, 1974],
-    "fourths": [1998],
-    "best": 2,
-    "odds": 3.45,
-    "fullOdds": "28 to 1",
-    "bestYear": [2010, 1978, 1974],
-    "population": 16750000,
-    "gdp": 770100000000,
-    "income": 48110,
+    "wins": 0,
+    "losses": 0,
+    "draws": 0,
+    "best": 25,
+    "population": 16904700,
+    "gdp": 853500000000,
+    "income": 51060,
+    "odds": 1.49,
+    "fullOdds": "66 to 1",
     "class": "netherlands"
+  },
+  {
+    "country": "New Zealand",
+    "continent": "Zealandia",
+    "wins": 0,
+    "losses": 8,
+    "draws": 1,
+    "best": 16,
+    "bestYear": 2011,
+    "population": 4585670,
+    "gdp": 185800000000,
+    "income": 35760,
+    "odds": 0.66,
+    "fullOdds": "150 to 1",
+    "class": "new-zealand"
   },
   {
     "country": "Nigeria",
     "continent": "Africa",
-    "wins": 4,
-    "losses": 8,
+    "wins": 3,
+    "losses": 14,
     "draws": 2,
-    "best": 16,
-    "odds": 0.33,
-    "fullOdds": "300 to 1",
-    "bestYear": 1998,
-    "population": 168800000,
-    "gdp": 459600000000,
-    "income": 2490,
+    "best": 8,
+    "bestYear": 1999,
+    "population": 183523000,
+    "gdp": 521800000000,
+    "income": 2710,
+    "odds": 0.5,
+    "fullOdds": "200 to 1",
     "class": "nigeria"
   },
   {
-    "country": "Portugal",
+    "country": "Norway",
     "continent": "Europe",
-    "wins": 12,
-    "losses": 8,
-    "draws": 3,
-    "thirds": [1966],
-    "fourths": [2006],
-    "best": 3,
-    "odds": 4.35,
-    "fullOdds": "22 to 1",
-    "bestYear": 1966,
-    "population": 10510000,
-    "gdp": 212100000000,
-    "income": 20690,
-    "class": "portgual"
-  },
-  {
-    "country": "Russia",
-    "continent": "Asia",
-    "wins": 2,
-    "losses": 4,
-    "draws": 0,
-    "best": 24,
-    "odds": 1.23,
-    "fullOdds": "80 to 1",
-    "bestYear": 2002,
-    "population": 143500000,
-    "gdp": 2015000000000,
-    "income": 12700,
-    "class": "russia"
+    "wins": 20,
+    "losses": 9,
+    "draws": 1,
+    "best": 1,
+    "bestYear": 1995,
+    "champions": 1,
+    "firsts": [1995],
+    "seconds": [1991],
+    "fourths": [2007, 1999],
+    "population": 5176998,
+    "gdp": 512600000000,
+    "income": 102700,
+    "odds": 3.85,
+    "fullOdds": "25 to 1",
+    "class": "norway"
   },
   {
     "country": "South Korea",
     "continent": "Asia",
-    "wins": 5,
-    "losses": 15,
-    "draws": 8,
-    "fourths": [2002],
-    "best": 4,
-    "odds": 0.4,
-    "fullOdds": "250 to 1",
-    "bestYear": 1998,
-    "population": 50000000,
-    "gdp": 1130000000000,
-    "income": 22670,
+    "wins": 0,
+    "losses": 3,
+    "draws": 0,
+    "best": 16,
+    "bestYear": 2003,
+    "population": 51342881,
+    "gdp": 1305000000000,
+    "income": 25920,
+    "odds": 1.49,
+    "fullOdds": "66 to 1",
     "class": "south-korea"
   },
   {
     "country": "Spain",
     "continent": "Europe",
-    "wins": 28,
-    "losses": 16,
-    "draws": 12,
-    "firsts": [2010],
-    "fourths": [1950],
-    "best": 1,
-    "odds": 14.29,
-    "fullOdds": "6 to 1",
-    "champions": 1,
-    "bestYear": 2010,
-    "population": 46760000,
-    "gdp": 1322000000000,
-    "income": 29340,
+    "wins": 0,
+    "losses": 0,
+    "draws": 0,
+    "best": 25,
+    "population": 46464053,
+    "gdp": 1393000000000,
+    "income": 29940,
+    "odds": 1.96,
+    "fullOdds": "50 to 1",
     "class": "spain"
+  },
+  {
+    "country": "Sweden",
+    "continent": "Europe",
+    "wins": 18,
+    "losses": 10,
+    "draws": 1,
+    "best": 2,
+    "bestYear": 2003,
+    "seconds": [2003],
+    "thirds": [2011, 1991],
+    "population": 9767357,
+    "gdp": 579700000000,
+    "income": 61710,
+    "odds": 9.09,
+    "fullOdds": "10 to 1",
+    "class": "sweden"
   },
   {
     "country": "Switzerland",
     "continent": "Europe",
-    "wins": 9,
-    "losses": 14,
-    "draws": 6,
-    "best": 8,
-    "odds": 0.99,
-    "fullOdds": "100 to 1",
-    "bestYear": 1954,
-    "population": 7997000,
-    "gdp": 631200000000,
-    "income": 80970,
+    "wins": 0,
+    "losses": 0,
+    "draws": 0,
+    "best": 25,
+    "population": 8236600,
+    "gdp": 685400000000,
+    "income": 90680,
+    "odds": 1.23,
+    "fullOdds": "80 to 1",
     "class": "switzerland"
   },
   {
-    "country": "Uruguay",
-    "continent": "South America",
-    "wins": 18,
-    "losses": 17,
-    "draws": 12,
-    "firsts": [1950, 1930],
-    "fourths": [2010, 1970, 1954],
-    "best": 1,
-    "champions": 2,
-    "odds": 3.45,
-    "fullOdds": "28 to 1",
-    "bestYear": [1950, 1930],
-    "population": 3395000,
-    "gdp": 49920000000,
-    "income": 13580,
-    "class": "uruguay"
+    "country": "Thailand",
+    "continent": "Asia",
+    "wins": 0,
+    "losses": 0,
+    "draws": 0,
+    "best": 25,
+    "population": 65104000,
+    "gdp": 387300000000,
+    "income": 5340,
+    "odds": 0.2,
+    "fullOdds": "500 to 1",
+    "class": "thailand"
   },
   {
     "country": "United States",
     "continent": "North America",
-    "wins": 7,
-    "losses": 17,
+    "wins": 27,
+    "losses": 4,
     "draws": 5,
-    "thirds": [1930],
-    "best": 3,
-    "odds": 0.4,
-    "fullOdds": "250 to 1",
-    "bestYear": 1930,
-    "population": 313900000,
-    "gdp": 16240000000000,
-    "income": 52340,
+    "best": 1,
+    "bestYear": [1999, 1991],
+    "champions": 2,
+    "firsts": [1999, 1991],
+    "seconds": [2011],
+    "thirds": [2007, 2003, 1995],
+    "population": 321107000,
+    "gdp": 16770000000000,
+    "income": 53470,
+    "odds": 25,
+    "fullOdds": "3 to 1",
     "class": "united-states"
   }
 ];
@@ -539,8 +393,8 @@ var graphRecords = function() {
       .attr("x", x(country))
       .attr("y", height + 5)
       .attr("width", x.rangeBand())
-      .attr("height", 18)
-      .attr("xlink:href", "./assets/flags/"+ flag + ".png")
+      .attr("height", 20)
+      .attr("xlink:href", "./assets/flags/" + flag + ".png")
       .attr("preserveAspectRatio", "none")
       .attr("class", "flag")
       .attr("data-toggle", "tooltip")
@@ -552,7 +406,7 @@ var graphRecords = function() {
 
   var yAxis = d3.svg.axis().scale(y).orient("right").ticks(10, "s");
 
-  var svg = d3.select("svg.records")
+  var svg = d3.select("#records-2015 svg.records")
       .attr("width", width + margin.left + margin.right)
       .attr("height", height + margin.top + margin.bottom)
     .append("g")
@@ -566,7 +420,10 @@ var graphRecords = function() {
         return a.wins - b.wins;
       else if (a.draws > b.draws)
         return a.draws - b.draws;
-      return b.losses - a.losses;
+      else if (b.losses !== a.losses)
+        return b.losses - a.losses;
+      else
+        return a.country.localeCompare(b.country);
     }
     return totalA - totalB;
   });
@@ -587,7 +444,7 @@ var graphRecords = function() {
   svg.selectAll(".wins")
       .data(records)
     .enter().append("rect")
-      .attr("class", function(d) { return "bar wins "+ d.class; })
+      .attr("class", function(d) { return "bar wins " + d.class; })
       .attr("x", function(d) { return x(d.country); })
       .attr("width", x.rangeBand())
       .attr("y", function(d) { return y(d.wins + d.losses + d.draws); })
@@ -599,7 +456,7 @@ var graphRecords = function() {
   svg.selectAll(".draws")
       .data(records)
     .enter().append("rect")
-      .attr("class", function(d) { return "bar draws "+ d.class; })
+      .attr("class", function(d) { return "bar draws " + d.class; })
       .attr("x", function(d) { return x(d.country); })
       .attr("width", x.rangeBand())
       .attr("y", function(d) { return y(d.losses + d.draws); })
@@ -611,7 +468,7 @@ var graphRecords = function() {
   svg.selectAll(".losses")
       .data(records)
     .enter().append("rect")
-      .attr("class", function(d) { return "bar losses "+ d.class; })
+      .attr("class", function(d) { return "bar losses " + d.class; })
       .attr("x", function(d) { return x(d.country); })
       .attr("width", x.rangeBand())
       .attr("y", function(d) { return y(d.losses); })
@@ -642,6 +499,8 @@ var graphRecords = function() {
 var graphTopFinishes = function() {
   var x = d3.scale.ordinal().rangeRoundBands([0, width], .1);
   var y = d3.scale.linear().range([height, 0]);
+  var max = data.length + 1;
+  var textXStart = 16;
 
   var xAxis = d3.svg.axis().scale(x).orient("bottom").tickFormat(function(country) {
     var flag = country.toLowerCase().replace(/ /g, '-');
@@ -649,8 +508,8 @@ var graphTopFinishes = function() {
       .attr("x", x(country))
       .attr("y", height + 5)
       .attr("width", x.rangeBand())
-      .attr("height", 18)
-      .attr("xlink:href", "./assets/flags/"+ flag + ".png")
+      .attr("height", 20)
+      .attr("xlink:href", "./assets/flags/" + flag + ".png")
       .attr("preserveAspectRatio", "none")
       .attr('class', 'flag')
       .attr("data-toggle", "tooltip")
@@ -661,7 +520,7 @@ var graphTopFinishes = function() {
 
   var yAxis = d3.svg.axis().scale(y).orient("right").ticks(0, "s");
 
-  var svg = d3.select("svg.finishes")
+  var svg = d3.select("#finishes-2015 svg.finishes")
       .attr("width", width + margin.left + margin.right)
       .attr("height", height + margin.top + margin.bottom)
     .append("g")
@@ -671,8 +530,10 @@ var graphTopFinishes = function() {
     if (a.best === b.best)
       if (a.best === 1 && b.best === 1 && a.champions !== b.champions)
         return a.champions - b.champions;
-      else
+      else if (a.wins !== b.wins)
         return a.wins - b.wins;
+      else
+        return a.country.localeCompare(b.country);
     else
       return b.best - a.best;
   });
@@ -691,8 +552,8 @@ var graphTopFinishes = function() {
       .attr("class", function(d) { return "bar best-" + d.best; })
       .attr("x", function(d) { return x(d.country); })
       .attr("width", x.rangeBand())
-      .attr("y", function(d) { return y(33 - d.best); })
-      .attr("height", function(d) { return Math.max(0, height - y(33 - d.best)); })
+      .attr("y", function(d) { return y(max - d.best); })
+      .attr("height", function(d) { return Math.max(0, height - y(max - d.best)); })
       .attr("data-toggle", "tooltip")
       .attr("data-placement", "top")
       .attr("title", function(d) { return d.country; });
@@ -703,13 +564,13 @@ var graphTopFinishes = function() {
         .data(years[i].bestYear.length > 0 ? years[i].bestYear : [years[i].bestYear])
       .enter().append("text")
         .attr("class", "years")
-        .attr("x", function(d) { return x(years[i].country) + 12; })
+        .attr("x", function(d) { return x(years[i].country) + textXStart; })
         .attr("y", function(d, k) { return y(1) - (16 * (k + 1)); })
         .attr("dy", ".71em")
         .text(function(bestYear) { return bestYear; });
 
   var legend = svg.selectAll(".legend")
-      .data(["1st", "2nd", "3rd", "4th", "Quarterfinals", "Round of 16", "Group Stage"])
+      .data(["1st", "2nd", "3rd", "4th", "Quarterfinals", "Group Stage"])
     .enter().append("g")
       .attr("class", "legend")
       .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
@@ -747,6 +608,7 @@ var graphTopFinishes = function() {
 var graphTopFourFinishes = function() {
   var x = d3.scale.ordinal().rangeRoundBands([0, width], .1);
   var y = d3.scale.linear().range([height, 0]);
+  var textXStart = 16;
 
   var xAxis = d3.svg.axis().scale(x).orient("bottom").tickFormat(function(country) {
     var flag = country.toLowerCase().replace(/ /g, '-');
@@ -755,8 +617,8 @@ var graphTopFourFinishes = function() {
       .attr("x", x(country))
       .attr("y", height + 5)
       .attr("width", x.rangeBand())
-      .attr("height", 18)
-      .attr("xlink:href", "./assets/flags/"+ flag + ".png")
+      .attr("height", 20)
+      .attr("xlink:href", "./assets/flags/" + flag + ".png")
       .attr("preserveAspectRatio", "none")
       .attr("class", "flag")
       .attr("data-toggle", "tooltip")
@@ -766,9 +628,9 @@ var graphTopFourFinishes = function() {
     return '';
   });
 
-  var yAxis = d3.svg.axis().scale(y).orient("right").ticks(10, "s");
+  var yAxis = d3.svg.axis().scale(y).orient("right").ticks(5, "d");
 
-  var svg = d3.select("svg.top-4")
+  var svg = d3.select("#top-4-2015 svg.top-4")
       .attr("width", width + margin.left + margin.right)
       .attr("height", height + margin.top + margin.bottom)
     .append("g")
@@ -787,6 +649,16 @@ var graphTopFourFinishes = function() {
 
     var totalA = firstA + secondA + thirdA + fourthA;
     var totalB = firstB + secondB + thirdB + fourthB;
+
+    var matchesA = a.wins + a.draws + a.losses;
+    var matchesB = b.wins + b.draws + b.losses;
+
+    if (matchesA === 0 && matchesB > 0)
+      return -1;
+
+    if (matchesB === 0 && matchesA > 0)
+      return 1;
+
     if (totalA === totalB) {
       if (firstA !== firstB)
         return firstA - firstB;
@@ -800,17 +672,20 @@ var graphTopFourFinishes = function() {
         return a.wins - b.wins;
       else if (a.draws !== b.draws)
         return a.draws - b.draws;
-      return b.losses - a.losses;
+      else if (b.losses !== a.losses)
+        return b.losses - a.losses;
+      else
+        return a.country.localeCompare(b.country);
     }
     return totalA - totalB;
   });
 
   x.domain(finishes.map(function(d) { return d.country; }));
   y.domain([0, d3.max(finishes, function(d) {
-    var firsts  = d.firsts   ? d.firsts.length : 0;
-    var seconds = d.seconds  ? d.seconds.length : 0;
-    var thirds  = d.thirds   ? d.thirds.length : 0;
-    var fourths = d.fourths  ? d.fourths.length : 0;
+    var firsts  = d.firsts  ? d.firsts.length  : 0;
+    var seconds = d.seconds ? d.seconds.length : 0;
+    var thirds  = d.thirds  ? d.thirds.length  : 0;
+    var fourths = d.fourths ? d.fourths.length : 0;
     return firsts + seconds + thirds + fourths;
   })]);
 
@@ -831,10 +706,10 @@ var graphTopFourFinishes = function() {
       .attr("x", function(d) { return x(d.country); })
       .attr("width", x.rangeBand())
       .attr("y", function(d) {
-        var firsts   = d.firsts  ? d.firsts.length : 0;
-        var seconds  = d.seconds ? d.seconds.length : 0;
-        var thirds   = d.thirds  ? d.thirds.length : 0;
-        var fourths  = d.fourths ? d.fourths.length : 0;
+        var firsts  = d.firsts  ? d.firsts.length  : 0;
+        var seconds = d.seconds ? d.seconds.length : 0;
+        var thirds  = d.thirds  ? d.thirds.length  : 0;
+        var fourths = d.fourths ? d.fourths.length : 0;
         return y(firsts + seconds + thirds + fourths);
       })
       .attr("height", function(d) { return height - y(d.firsts ? d.firsts.length : 0); })
@@ -845,13 +720,13 @@ var graphTopFourFinishes = function() {
   svg.selectAll(".seconds")
       .data(finishes)
     .enter().append("rect")
-      .attr("class", function(d) { return "bar best-2 "+ d.class; })
+      .attr("class", function(d) { return "bar best-2 " + d.class; })
       .attr("x", function(d) { return x(d.country); })
       .attr("width", x.rangeBand())
       .attr("y", function(d) {
-        var seconds  = d.seconds ? d.seconds.length : 0;
-        var thirds   = d.thirds  ? d.thirds.length : 0;
-        var fourths  = d.fourths ? d.fourths.length : 0;
+        var seconds = d.seconds ? d.seconds.length : 0;
+        var thirds  = d.thirds  ? d.thirds.length  : 0;
+        var fourths = d.fourths ? d.fourths.length : 0;
         return y(seconds + thirds + fourths);
       })
       .attr("height", function(d) { return height - y(d.seconds ? d.seconds.length : 0); })
@@ -862,13 +737,13 @@ var graphTopFourFinishes = function() {
   svg.selectAll(".thirds")
       .data(finishes)
     .enter().append("rect")
-      .attr("class", function(d) { return "bar best-3 "+ d.class; })
+      .attr("class", function(d) { return "bar best-3 " + d.class; })
       .attr("x", function(d) { return x(d.country); })
       .attr("width", x.rangeBand())
       .attr("y", function(d) { return y(d.losses); })
       .attr("y", function(d) {
-        var thirds   = d.thirds ? d.thirds.length : 0;
-        var fourths  = d.fourths ? d.fourths.length : 0;
+        var thirds  = d.thirds  ? d.thirds.length  : 0;
+        var fourths = d.fourths ? d.fourths.length : 0;
         return y(thirds + fourths);
       })
       .attr("height", function(d) { return height - y(d.thirds ? d.thirds.length : 0); })
@@ -879,7 +754,7 @@ var graphTopFourFinishes = function() {
   svg.selectAll(".fourths")
       .data(finishes)
     .enter().append("rect")
-      .attr("class", function(d) { return "bar best-4 "+ d.class; })
+      .attr("class", function(d) { return "bar best-4 " + d.class; })
       .attr("x", function(d) { return x(d.country); })
       .attr("width", x.rangeBand())
       .attr("y", function(d) { return y(d.fourths ? d.fourths.length : 0); })
@@ -896,11 +771,11 @@ var graphTopFourFinishes = function() {
           .data(d.firsts)
         .enter().append("text")
           .attr("class", "years")
-          .attr("x", function() { return x(d.country) + 12; })
+          .attr("x", function() { return x(d.country) + textXStart; })
           .attr("y", function(_d, k) {
-            var seconds  = d.seconds ? d.seconds.length : 0;
-            var thirds   = d.thirds  ? d.thirds.length : 0;
-            var fourths  = d.fourths ? d.fourths.length : 0;
+            var seconds = d.seconds ? d.seconds.length : 0;
+            var thirds  = d.thirds  ? d.thirds.length  : 0;
+            var fourths = d.fourths ? d.fourths.length : 0;
             return y(seconds + thirds + fourths) - (16 * (k + 1));
           })
           .attr("dy", ".71em")
@@ -912,10 +787,10 @@ var graphTopFourFinishes = function() {
           .data(d.seconds)
         .enter().append("text")
           .attr("class", "years")
-          .attr("x", function() { return x(d.country) + 12; })
+          .attr("x", function() { return x(d.country) + textXStart; })
           .attr("y", function(_d, k) {
-            var thirds   = d.thirds  ? d.thirds.length : 0;
-            var fourths  = d.fourths ? d.fourths.length : 0;
+            var thirds  = d.thirds  ? d.thirds.length  : 0;
+            var fourths = d.fourths ? d.fourths.length : 0;
             return y(thirds + fourths) - (16 * (k + 1));
           })
           .attr("dy", ".71em")
@@ -927,9 +802,9 @@ var graphTopFourFinishes = function() {
           .data(d.thirds)
         .enter().append("text")
           .attr("class", "years")
-          .attr("x", function() { return x(d.country) + 12; })
+          .attr("x", function() { return x(d.country) + textXStart; })
           .attr("y", function(_d, k) {
-            var fourths  = d.fourths ? d.fourths.length : 0;
+            var fourths = d.fourths ? d.fourths.length : 0;
             return y(fourths) - (16 * (k + 1));
           })
           .attr("dy", ".71em")
@@ -941,7 +816,7 @@ var graphTopFourFinishes = function() {
           .data(d.fourths)
         .enter().append("text")
           .attr("class", "years")
-          .attr("x", function() { return x(d.country) + 12; })
+          .attr("x", function() { return x(d.country) + textXStart; })
           .attr("y", function(_d, k) {
             return y(0) - (16 * (k + 1));
           })
@@ -990,8 +865,8 @@ var graphOdds = function() {
       .attr("x", x(country))
       .attr("y", height + 5)
       .attr("width", x.rangeBand())
-      .attr("height", 18)
-      .attr("xlink:href", "./assets/flags/"+ flag + ".png")
+      .attr("height", 20)
+      .attr("xlink:href", "./assets/flags/" + flag + ".png")
       .attr("preserveAspectRatio", "none")
       .attr('class', 'flag')
       .attr("data-toggle", "tooltip")
@@ -1004,14 +879,17 @@ var graphOdds = function() {
     return odds + "%";
   });
 
-  var svg = d3.select("svg.odds")
+  var svg = d3.select("#odds-2015 svg.odds")
       .attr("width", width + margin.left + margin.right)
       .attr("height", height + margin.top + margin.bottom)
     .append("g")
       .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
   var odds = data.slice().sort(function(a, b) {
-    return a.odds - b.odds;
+    if (a.odds !== b.odds)
+      return a.odds - b.odds;
+    else
+      return a.country.localeCompare(b.country);
   });
 
   x.domain(odds.map(function(d) { return d.country; }));
@@ -1089,7 +967,7 @@ var graphGdp = function() {
       .attr("y", height + 5)
       .attr("width", x.rangeBand())
       .attr("height", 18)
-      .attr("xlink:href", "./assets/flags/"+ flag + ".png")
+      .attr("xlink:href", "./assets/flags/" + flag + ".png")
       .attr("preserveAspectRatio", "none")
       .attr('class', 'flag')
       .attr("data-toggle", "tooltip")
@@ -1100,7 +978,7 @@ var graphGdp = function() {
 
   var yAxis = d3.svg.axis().scale(y).orient("right").ticks(10, "$s");
 
-  var svg = d3.select("svg.gdp")
+  var svg = d3.select("#gdp-2015 svg.gdp")
       .attr("width", width + margin.left + margin.right)
       .attr("height", height + margin.top + margin.bottom)
     .append("g")
@@ -1192,17 +1070,19 @@ var graphPopulation = function() {
       .attr("x", x(country))
       .attr("y", height + 5)
       .attr("width", x.rangeBand())
-      .attr("height", 18)
-      .attr("xlink:href", "./assets/flags/"+ flag + ".png")
+      .attr("height", 20)
+      .attr("xlink:href", "./assets/flags/" + flag + ".png")
       .attr("preserveAspectRatio", "none")
       .attr('class', 'flag')
       .attr("data-toggle", "tooltip")
       .attr("data-placement", "bottom")
-      .attr("title", country + titleFormat(dataByCountry[country].population));
+      .attr("title", country + titleFormat(dataByCountry[country].population).replace(/G/, 'B'));
     return '';
   });
 
-  var yAxis = d3.svg.axis().scale(y).orient("right").ticks(10, "s");
+  var yAxis = d3.svg.axis().scale(y).orient("right").ticks(10).tickFormat(function(d) {
+    return d3.format('s')(d).replace('G', 'B');
+  });
 
   var svg = d3.select("svg.population")
       .attr("width", width + margin.left + margin.right)
@@ -1227,7 +1107,7 @@ var graphPopulation = function() {
       .attr("transform", "translate(" + width + ",0)")
       .call(yAxis);
 
-  svg.selectAll(".population")
+  svg.selectAll("#population-2015 .population")
       .data(population)
     .enter().append("rect")
       .attr("class", function(d) {
@@ -1249,7 +1129,7 @@ var graphPopulation = function() {
       .attr("height", function(d) { return height - y(d.population); })
       .attr("data-toggle", "tooltip")
       .attr("data-placement", "top")
-      .attr("title", function(d) { return d.country + titleFormat(d.population) });
+      .attr("title", function(d) { return d.country + titleFormat(d.population).replace(/G/, 'B'); });
 
   var legend = svg.selectAll(".legend")
       .data(["200+ million", "100+ million", "50+ million", "25+ million", "10+ million", "< 10 million"])
@@ -1297,7 +1177,7 @@ var graphIncome = function() {
       .attr("y", height + 5)
       .attr("width", x.rangeBand())
       .attr("height", 18)
-      .attr("xlink:href", "./assets/flags/"+ flag + ".png")
+      .attr("xlink:href", "./assets/flags/" + flag + ".png")
       .attr("preserveAspectRatio", "none")
       .attr('class', 'flag')
       .attr("data-toggle", "tooltip")
@@ -1331,7 +1211,7 @@ var graphIncome = function() {
       .attr("transform", "translate(" + width + ",0)")
       .call(yAxis);
 
-  svg.selectAll(".income")
+  svg.selectAll("#income-2015 .income")
       .data(income)
     .enter().append("rect")
       .attr("class", function(d) {
